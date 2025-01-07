@@ -1,0 +1,192 @@
+ProgramState: 
+ID: 0
+STACK: 
+1: Ref(Int) v
+2: new(v, 20); Ref(Ref(Int)) a; new(a, v); print(rH(v)); print(rH(rH(a)) + 5)
+
+TABLE: 
+OUTPUT: 
+-------------------------------------
+FILE TABLE: 
+-------------------------------------
+HEAP: Heap:
+Empty
+
+-------------------------------------
+
+ProgramState: 
+ID: 0
+STACK: 
+1: new(v, 20); Ref(Ref(Int)) a; new(a, v); print(rH(v)); print(rH(rH(a)) + 5)
+
+TABLE: v -> (0, Int)
+
+OUTPUT: 
+-------------------------------------
+FILE TABLE: 
+-------------------------------------
+HEAP: Heap:
+Empty
+
+-------------------------------------
+
+ProgramState: 
+ID: 0
+STACK: 
+1: new(v, 20)
+2: Ref(Ref(Int)) a; new(a, v); print(rH(v)); print(rH(rH(a)) + 5)
+
+TABLE: v -> (0, Int)
+
+OUTPUT: 
+-------------------------------------
+FILE TABLE: 
+-------------------------------------
+HEAP: Heap:
+Empty
+
+-------------------------------------
+
+ProgramState: 
+ID: 0
+STACK: 
+1: Ref(Ref(Int)) a; new(a, v); print(rH(v)); print(rH(rH(a)) + 5)
+
+TABLE: v -> (1, Int)
+
+OUTPUT: 
+-------------------------------------
+FILE TABLE: 
+-------------------------------------
+HEAP: Heap:
+1 -> 20
+
+-------------------------------------
+
+ProgramState: 
+ID: 0
+STACK: 
+1: Ref(Ref(Int)) a
+2: new(a, v); print(rH(v)); print(rH(rH(a)) + 5)
+
+TABLE: v -> (1, Int)
+
+OUTPUT: 
+-------------------------------------
+FILE TABLE: 
+-------------------------------------
+HEAP: Heap:
+1 -> 20
+
+-------------------------------------
+
+ProgramState: 
+ID: 0
+STACK: 
+1: new(a, v); print(rH(v)); print(rH(rH(a)) + 5)
+
+TABLE: a -> (0, Ref(Int))
+v -> (1, Int)
+
+OUTPUT: 
+-------------------------------------
+FILE TABLE: 
+-------------------------------------
+HEAP: Heap:
+1 -> 20
+
+-------------------------------------
+
+ProgramState: 
+ID: 0
+STACK: 
+1: new(a, v)
+2: print(rH(v)); print(rH(rH(a)) + 5)
+
+TABLE: a -> (0, Ref(Int))
+v -> (1, Int)
+
+OUTPUT: 
+-------------------------------------
+FILE TABLE: 
+-------------------------------------
+HEAP: Heap:
+1 -> 20
+
+-------------------------------------
+
+ProgramState: 
+ID: 0
+STACK: 
+1: print(rH(v)); print(rH(rH(a)) + 5)
+
+TABLE: a -> (2, Ref(Int))
+v -> (1, Int)
+
+OUTPUT: 
+-------------------------------------
+FILE TABLE: 
+-------------------------------------
+HEAP: Heap:
+1 -> 20
+2 -> (1, Int)
+
+-------------------------------------
+
+ProgramState: 
+ID: 0
+STACK: 
+1: print(rH(v))
+2: print(rH(rH(a)) + 5)
+
+TABLE: a -> (2, Ref(Int))
+v -> (1, Int)
+
+OUTPUT: 
+-------------------------------------
+FILE TABLE: 
+-------------------------------------
+HEAP: Heap:
+1 -> 20
+2 -> (1, Int)
+
+-------------------------------------
+
+ProgramState: 
+ID: 0
+STACK: 
+1: print(rH(rH(a)) + 5)
+
+TABLE: a -> (2, Ref(Int))
+v -> (1, Int)
+
+OUTPUT: 20
+
+-------------------------------------
+FILE TABLE: 
+-------------------------------------
+HEAP: Heap:
+1 -> 20
+2 -> (1, Int)
+
+-------------------------------------
+
+ProgramState: 
+ID: 0
+STACK: 
+
+TABLE: a -> (2, Ref(Int))
+v -> (1, Int)
+
+OUTPUT: 20
+25
+
+-------------------------------------
+FILE TABLE: 
+-------------------------------------
+HEAP: Heap:
+1 -> 20
+2 -> (1, Int)
+
+-------------------------------------
+
