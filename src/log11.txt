@@ -1,0 +1,396 @@
+ProgramState: 
+ID: 5
+STACK: 
+1: Int v
+2: v = 4; while(v>0) print(v); v = v - 1; print(v)
+
+TABLE: 
+OUTPUT: 
+-------------------------------------
+FILE TABLE: 
+-------------------------------------
+HEAP: Empty
+
+-------------------------------------
+ProgramState: 
+ID: 5
+STACK: 
+1: v = 4; while(v>0) print(v); v = v - 1; print(v)
+
+TABLE: v -> 0
+
+OUTPUT: 
+-------------------------------------
+FILE TABLE: 
+-------------------------------------
+HEAP: Empty
+
+-------------------------------------
+ProgramState: 
+ID: 5
+STACK: 
+1: v = 4
+2: while(v>0) print(v); v = v - 1; print(v)
+
+TABLE: v -> 0
+
+OUTPUT: 
+-------------------------------------
+FILE TABLE: 
+-------------------------------------
+HEAP: Empty
+
+-------------------------------------
+ProgramState: 
+ID: 5
+STACK: 
+1: while(v>0) print(v); v = v - 1; print(v)
+
+TABLE: v -> 4
+
+OUTPUT: 
+-------------------------------------
+FILE TABLE: 
+-------------------------------------
+HEAP: Empty
+
+-------------------------------------
+ProgramState: 
+ID: 5
+STACK: 
+1: while(v>0) print(v); v = v - 1
+2: print(v)
+
+TABLE: v -> 4
+
+OUTPUT: 
+-------------------------------------
+FILE TABLE: 
+-------------------------------------
+HEAP: Empty
+
+-------------------------------------
+ProgramState: 
+ID: 5
+STACK: 
+1: print(v); v = v - 1
+2: while(v>0) print(v); v = v - 1
+3: print(v)
+
+TABLE: v -> 4
+
+OUTPUT: 
+-------------------------------------
+FILE TABLE: 
+-------------------------------------
+HEAP: Empty
+
+-------------------------------------
+ProgramState: 
+ID: 5
+STACK: 
+1: print(v)
+2: v = v - 1
+3: while(v>0) print(v); v = v - 1
+4: print(v)
+
+TABLE: v -> 4
+
+OUTPUT: 
+-------------------------------------
+FILE TABLE: 
+-------------------------------------
+HEAP: Empty
+
+-------------------------------------
+ProgramState: 
+ID: 5
+STACK: 
+1: v = v - 1
+2: while(v>0) print(v); v = v - 1
+3: print(v)
+
+TABLE: v -> 4
+
+OUTPUT: 4
+
+-------------------------------------
+FILE TABLE: 
+-------------------------------------
+HEAP: Empty
+
+-------------------------------------
+ProgramState: 
+ID: 5
+STACK: 
+1: while(v>0) print(v); v = v - 1
+2: print(v)
+
+TABLE: v -> 3
+
+OUTPUT: 4
+
+-------------------------------------
+FILE TABLE: 
+-------------------------------------
+HEAP: Empty
+
+-------------------------------------
+ProgramState: 
+ID: 5
+STACK: 
+1: print(v); v = v - 1
+2: while(v>0) print(v); v = v - 1
+3: print(v)
+
+TABLE: v -> 3
+
+OUTPUT: 4
+
+-------------------------------------
+FILE TABLE: 
+-------------------------------------
+HEAP: Empty
+
+-------------------------------------
+ProgramState: 
+ID: 5
+STACK: 
+1: print(v)
+2: v = v - 1
+3: while(v>0) print(v); v = v - 1
+4: print(v)
+
+TABLE: v -> 3
+
+OUTPUT: 4
+
+-------------------------------------
+FILE TABLE: 
+-------------------------------------
+HEAP: Empty
+
+-------------------------------------
+ProgramState: 
+ID: 5
+STACK: 
+1: v = v - 1
+2: while(v>0) print(v); v = v - 1
+3: print(v)
+
+TABLE: v -> 3
+
+OUTPUT: 4
+3
+
+-------------------------------------
+FILE TABLE: 
+-------------------------------------
+HEAP: Empty
+
+-------------------------------------
+ProgramState: 
+ID: 5
+STACK: 
+1: while(v>0) print(v); v = v - 1
+2: print(v)
+
+TABLE: v -> 2
+
+OUTPUT: 4
+3
+
+-------------------------------------
+FILE TABLE: 
+-------------------------------------
+HEAP: Empty
+
+-------------------------------------
+ProgramState: 
+ID: 5
+STACK: 
+1: print(v); v = v - 1
+2: while(v>0) print(v); v = v - 1
+3: print(v)
+
+TABLE: v -> 2
+
+OUTPUT: 4
+3
+
+-------------------------------------
+FILE TABLE: 
+-------------------------------------
+HEAP: Empty
+
+-------------------------------------
+ProgramState: 
+ID: 5
+STACK: 
+1: print(v)
+2: v = v - 1
+3: while(v>0) print(v); v = v - 1
+4: print(v)
+
+TABLE: v -> 2
+
+OUTPUT: 4
+3
+
+-------------------------------------
+FILE TABLE: 
+-------------------------------------
+HEAP: Empty
+
+-------------------------------------
+ProgramState: 
+ID: 5
+STACK: 
+1: v = v - 1
+2: while(v>0) print(v); v = v - 1
+3: print(v)
+
+TABLE: v -> 2
+
+OUTPUT: 4
+3
+2
+
+-------------------------------------
+FILE TABLE: 
+-------------------------------------
+HEAP: Empty
+
+-------------------------------------
+ProgramState: 
+ID: 5
+STACK: 
+1: while(v>0) print(v); v = v - 1
+2: print(v)
+
+TABLE: v -> 1
+
+OUTPUT: 4
+3
+2
+
+-------------------------------------
+FILE TABLE: 
+-------------------------------------
+HEAP: Empty
+
+-------------------------------------
+ProgramState: 
+ID: 5
+STACK: 
+1: print(v); v = v - 1
+2: while(v>0) print(v); v = v - 1
+3: print(v)
+
+TABLE: v -> 1
+
+OUTPUT: 4
+3
+2
+
+-------------------------------------
+FILE TABLE: 
+-------------------------------------
+HEAP: Empty
+
+-------------------------------------
+ProgramState: 
+ID: 5
+STACK: 
+1: print(v)
+2: v = v - 1
+3: while(v>0) print(v); v = v - 1
+4: print(v)
+
+TABLE: v -> 1
+
+OUTPUT: 4
+3
+2
+
+-------------------------------------
+FILE TABLE: 
+-------------------------------------
+HEAP: Empty
+
+-------------------------------------
+ProgramState: 
+ID: 5
+STACK: 
+1: v = v - 1
+2: while(v>0) print(v); v = v - 1
+3: print(v)
+
+TABLE: v -> 1
+
+OUTPUT: 4
+3
+2
+1
+
+-------------------------------------
+FILE TABLE: 
+-------------------------------------
+HEAP: Empty
+
+-------------------------------------
+ProgramState: 
+ID: 5
+STACK: 
+1: while(v>0) print(v); v = v - 1
+2: print(v)
+
+TABLE: v -> 0
+
+OUTPUT: 4
+3
+2
+1
+
+-------------------------------------
+FILE TABLE: 
+-------------------------------------
+HEAP: Empty
+
+-------------------------------------
+ProgramState: 
+ID: 5
+STACK: 
+1: print(v)
+
+TABLE: v -> 0
+
+OUTPUT: 4
+3
+2
+1
+
+-------------------------------------
+FILE TABLE: 
+-------------------------------------
+HEAP: Empty
+
+-------------------------------------
+ProgramState: 
+ID: 5
+STACK: 
+
+TABLE: v -> 0
+
+OUTPUT: 4
+3
+2
+1
+0
+
+-------------------------------------
+FILE TABLE: 
+-------------------------------------
+HEAP: Empty
+
+-------------------------------------

@@ -62,7 +62,6 @@ public class MyHeap implements IMyHeap{
 
     public String toString(){
         StringBuilder result = new StringBuilder();
-        result.append("Heap:\n");
         if(heap.isEmpty()) {
             result.append("Empty\n");
             return result.toString();

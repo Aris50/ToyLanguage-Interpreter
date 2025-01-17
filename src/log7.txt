@@ -1,5 +1,5 @@
 ProgramState: 
-ID: 3
+ID: 1
 STACK: 
 1: Ref(Int) v
 2: new(v, 20); Ref(Ref(Int)) a; new(a, v); print(v); print(a)
@@ -9,13 +9,11 @@ OUTPUT:
 -------------------------------------
 FILE TABLE: 
 -------------------------------------
-HEAP: Heap:
-Empty
+HEAP: Empty
 
 -------------------------------------
-
 ProgramState: 
-ID: 3
+ID: 1
 STACK: 
 1: new(v, 20); Ref(Ref(Int)) a; new(a, v); print(v); print(a)
 
@@ -25,13 +23,11 @@ OUTPUT:
 -------------------------------------
 FILE TABLE: 
 -------------------------------------
-HEAP: Heap:
-Empty
+HEAP: Empty
 
 -------------------------------------
-
 ProgramState: 
-ID: 3
+ID: 1
 STACK: 
 1: new(v, 20)
 2: Ref(Ref(Int)) a; new(a, v); print(v); print(a)
@@ -42,13 +38,11 @@ OUTPUT:
 -------------------------------------
 FILE TABLE: 
 -------------------------------------
-HEAP: Heap:
-Empty
+HEAP: Empty
 
 -------------------------------------
-
 ProgramState: 
-ID: 3
+ID: 1
 STACK: 
 1: Ref(Ref(Int)) a; new(a, v); print(v); print(a)
 
@@ -58,13 +52,11 @@ OUTPUT:
 -------------------------------------
 FILE TABLE: 
 -------------------------------------
-HEAP: Heap:
-1 -> 20
+HEAP: 1 -> 20
 
 -------------------------------------
-
 ProgramState: 
-ID: 3
+ID: 1
 STACK: 
 1: Ref(Ref(Int)) a
 2: new(a, v); print(v); print(a)
@@ -75,13 +67,11 @@ OUTPUT:
 -------------------------------------
 FILE TABLE: 
 -------------------------------------
-HEAP: Heap:
-1 -> 20
+HEAP: 1 -> 20
 
 -------------------------------------
-
 ProgramState: 
-ID: 3
+ID: 1
 STACK: 
 1: new(a, v); print(v); print(a)
 
@@ -92,13 +82,11 @@ OUTPUT:
 -------------------------------------
 FILE TABLE: 
 -------------------------------------
-HEAP: Heap:
-1 -> 20
+HEAP: 1 -> 20
 
 -------------------------------------
-
 ProgramState: 
-ID: 3
+ID: 1
 STACK: 
 1: new(a, v)
 2: print(v); print(a)
@@ -110,13 +98,11 @@ OUTPUT:
 -------------------------------------
 FILE TABLE: 
 -------------------------------------
-HEAP: Heap:
-1 -> 20
+HEAP: 1 -> 20
 
 -------------------------------------
-
 ProgramState: 
-ID: 3
+ID: 1
 STACK: 
 1: print(v); print(a)
 
@@ -127,14 +113,12 @@ OUTPUT:
 -------------------------------------
 FILE TABLE: 
 -------------------------------------
-HEAP: Heap:
-1 -> 20
+HEAP: 1 -> 20
 2 -> (1, Int)
 
 -------------------------------------
-
 ProgramState: 
-ID: 3
+ID: 1
 STACK: 
 1: print(v)
 2: print(a)
@@ -146,14 +130,12 @@ OUTPUT:
 -------------------------------------
 FILE TABLE: 
 -------------------------------------
-HEAP: Heap:
-1 -> 20
+HEAP: 1 -> 20
 2 -> (1, Int)
 
 -------------------------------------
-
 ProgramState: 
-ID: 3
+ID: 1
 STACK: 
 1: print(a)
 
@@ -165,14 +147,12 @@ OUTPUT: (1, Int)
 -------------------------------------
 FILE TABLE: 
 -------------------------------------
-HEAP: Heap:
-1 -> 20
+HEAP: 1 -> 20
 2 -> (1, Int)
 
 -------------------------------------
-
 ProgramState: 
-ID: 3
+ID: 1
 STACK: 
 
 TABLE: a -> (2, Ref(Int))
@@ -184,201 +164,7 @@ OUTPUT: (1, Int)
 -------------------------------------
 FILE TABLE: 
 -------------------------------------
-HEAP: Heap:
-1 -> 20
+HEAP: 1 -> 20
 2 -> (1, Int)
 
 -------------------------------------
-
-ProgramState: 
-ID: 4
-STACK: 
-1: Ref(Int) v
-2: new(v, 20); Ref(Ref(Int)) a; new(a, v); print(v); print(a)
-
-TABLE: 
-OUTPUT: 
--------------------------------------
-FILE TABLE: 
--------------------------------------
-HEAP: Heap:
-Empty
-
--------------------------------------
-
-ProgramState: 
-ID: 4
-STACK: 
-1: new(v, 20); Ref(Ref(Int)) a; new(a, v); print(v); print(a)
-
-TABLE: v -> (0, Int)
-
-OUTPUT: 
--------------------------------------
-FILE TABLE: 
--------------------------------------
-HEAP: Heap:
-Empty
-
--------------------------------------
-
-ProgramState: 
-ID: 4
-STACK: 
-1: new(v, 20)
-2: Ref(Ref(Int)) a; new(a, v); print(v); print(a)
-
-TABLE: v -> (0, Int)
-
-OUTPUT: 
--------------------------------------
-FILE TABLE: 
--------------------------------------
-HEAP: Heap:
-Empty
-
--------------------------------------
-
-ProgramState: 
-ID: 4
-STACK: 
-1: Ref(Ref(Int)) a; new(a, v); print(v); print(a)
-
-TABLE: v -> (1, Int)
-
-OUTPUT: 
--------------------------------------
-FILE TABLE: 
--------------------------------------
-HEAP: Heap:
-1 -> 20
-
--------------------------------------
-
-ProgramState: 
-ID: 4
-STACK: 
-1: Ref(Ref(Int)) a
-2: new(a, v); print(v); print(a)
-
-TABLE: v -> (1, Int)
-
-OUTPUT: 
--------------------------------------
-FILE TABLE: 
--------------------------------------
-HEAP: Heap:
-1 -> 20
-
--------------------------------------
-
-ProgramState: 
-ID: 4
-STACK: 
-1: new(a, v); print(v); print(a)
-
-TABLE: a -> (0, Ref(Int))
-v -> (1, Int)
-
-OUTPUT: 
--------------------------------------
-FILE TABLE: 
--------------------------------------
-HEAP: Heap:
-1 -> 20
-
--------------------------------------
-
-ProgramState: 
-ID: 4
-STACK: 
-1: new(a, v)
-2: print(v); print(a)
-
-TABLE: a -> (0, Ref(Int))
-v -> (1, Int)
-
-OUTPUT: 
--------------------------------------
-FILE TABLE: 
--------------------------------------
-HEAP: Heap:
-1 -> 20
-
--------------------------------------
-
-ProgramState: 
-ID: 4
-STACK: 
-1: print(v); print(a)
-
-TABLE: a -> (2, Ref(Int))
-v -> (1, Int)
-
-OUTPUT: 
--------------------------------------
-FILE TABLE: 
--------------------------------------
-HEAP: Heap:
-1 -> 20
-2 -> (1, Int)
-
--------------------------------------
-
-ProgramState: 
-ID: 4
-STACK: 
-1: print(v)
-2: print(a)
-
-TABLE: a -> (2, Ref(Int))
-v -> (1, Int)
-
-OUTPUT: 
--------------------------------------
-FILE TABLE: 
--------------------------------------
-HEAP: Heap:
-1 -> 20
-2 -> (1, Int)
-
--------------------------------------
-
-ProgramState: 
-ID: 4
-STACK: 
-1: print(a)
-
-TABLE: a -> (2, Ref(Int))
-v -> (1, Int)
-
-OUTPUT: (1, Int)
-
--------------------------------------
-FILE TABLE: 
--------------------------------------
-HEAP: Heap:
-1 -> 20
-2 -> (1, Int)
-
--------------------------------------
-
-ProgramState: 
-ID: 4
-STACK: 
-
-TABLE: a -> (2, Ref(Int))
-v -> (1, Int)
-
-OUTPUT: (1, Int)
-(2, Ref(Int))
-
--------------------------------------
-FILE TABLE: 
--------------------------------------
-HEAP: Heap:
-1 -> 20
-2 -> (1, Int)
-
--------------------------------------
-

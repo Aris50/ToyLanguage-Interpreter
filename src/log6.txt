@@ -1,0 +1,28 @@
+ProgramState: 
+ID: 0
+STACK: 
+1: Int x
+2: x = 20; Int y; y = 15; IF(x>y) THEN {print(x)}ELSE {print(y)}
+
+TABLE: 
+OUTPUT: 
+-------------------------------------
+FILE TABLE: 
+-------------------------------------
+HEAP: Empty
+
+-------------------------------------
+ProgramState: 
+ID: 0
+STACK: 
+1: x = 20; Int y; y = 15; IF(x>y) THEN {print(x)}ELSE {print(y)}
+
+TABLE: x -> 0
+
+OUTPUT: 
+-------------------------------------
+FILE TABLE: 
+-------------------------------------
+HEAP: Empty
+
+-------------------------------------

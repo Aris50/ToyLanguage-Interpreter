@@ -10,7 +10,7 @@ public class Example5 implements Example{
         return new CompStmt(
                 new VarDecl("varf", new StringType()),
                 new CompStmt(
-                        new AssignStmt("varf", new ValueExpression(new StringValue("/Users/arisoniga/Desktop/Work/IE2/MAP/ASSIGNMENTS/A3/src/test.in"))),
+                        new AssignStmt("varf", new ValueExpression(new StringValue("/Users/arisoniga/Desktop/Work/UBB_FMI_INFO/IE2/MAP/ASSIGNMENTS/A6/src/test.in"))),
                         new CompStmt(
                                 new OpenRFile(new VariableExpression("varf")),
                                 new CompStmt(

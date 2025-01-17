@@ -1,23 +1,21 @@
 ProgramState: 
-ID: 0
+ID: 1
 STACK: 
 1: string varf
-2: varf = /Users/arisoniga/Desktop/Work/IE2/MAP/ASSIGNMENTS/A3/src/test.in; openRFile(varf); Int varc; readFile(varf, varc); print(varc); readFile(varf, varc); print(varc); closeRFile(varf)
+2: varf = /Users/arisoniga/Desktop/Work/UBB_FMI_INFO/IE2/MAP/ASSIGNMENTS/A6/src/test.in; openRFile(varf); Int varc; readFile(varf, varc); print(varc); readFile(varf, varc); print(varc); closeRFile(varf)
 
 TABLE: 
 OUTPUT: 
 -------------------------------------
 FILE TABLE: 
 -------------------------------------
-HEAP: Heap:
-Empty
+HEAP: Empty
 
 -------------------------------------
-
 ProgramState: 
-ID: 0
+ID: 1
 STACK: 
-1: varf = /Users/arisoniga/Desktop/Work/IE2/MAP/ASSIGNMENTS/A3/src/test.in; openRFile(varf); Int varc; readFile(varf, varc); print(varc); readFile(varf, varc); print(varc); closeRFile(varf)
+1: varf = /Users/arisoniga/Desktop/Work/UBB_FMI_INFO/IE2/MAP/ASSIGNMENTS/A6/src/test.in; openRFile(varf); Int varc; readFile(varf, varc); print(varc); readFile(varf, varc); print(varc); closeRFile(varf)
 
 TABLE: varf -> 
 
@@ -25,15 +23,13 @@ OUTPUT:
 -------------------------------------
 FILE TABLE: 
 -------------------------------------
-HEAP: Heap:
-Empty
+HEAP: Empty
 
 -------------------------------------
-
 ProgramState: 
-ID: 0
+ID: 1
 STACK: 
-1: varf = /Users/arisoniga/Desktop/Work/IE2/MAP/ASSIGNMENTS/A3/src/test.in
+1: varf = /Users/arisoniga/Desktop/Work/UBB_FMI_INFO/IE2/MAP/ASSIGNMENTS/A6/src/test.in
 2: openRFile(varf); Int varc; readFile(varf, varc); print(varc); readFile(varf, varc); print(varc); closeRFile(varf)
 
 TABLE: varf -> 
@@ -42,255 +38,170 @@ OUTPUT:
 -------------------------------------
 FILE TABLE: 
 -------------------------------------
-HEAP: Heap:
-Empty
+HEAP: Empty
 
 -------------------------------------
-
 ProgramState: 
-ID: 0
+ID: 1
 STACK: 
 1: openRFile(varf); Int varc; readFile(varf, varc); print(varc); readFile(varf, varc); print(varc); closeRFile(varf)
 
-TABLE: varf -> /Users/arisoniga/Desktop/Work/IE2/MAP/ASSIGNMENTS/A3/src/test.in
+TABLE: varf -> /Users/arisoniga/Desktop/Work/UBB_FMI_INFO/IE2/MAP/ASSIGNMENTS/A6/src/test.in
 
 OUTPUT: 
 -------------------------------------
 FILE TABLE: 
 -------------------------------------
-HEAP: Heap:
-Empty
+HEAP: Empty
 
 -------------------------------------
-
 ProgramState: 
-ID: 0
+ID: 1
 STACK: 
 1: openRFile(varf)
 2: Int varc; readFile(varf, varc); print(varc); readFile(varf, varc); print(varc); closeRFile(varf)
 
-TABLE: varf -> /Users/arisoniga/Desktop/Work/IE2/MAP/ASSIGNMENTS/A3/src/test.in
+TABLE: varf -> /Users/arisoniga/Desktop/Work/UBB_FMI_INFO/IE2/MAP/ASSIGNMENTS/A6/src/test.in
 
 OUTPUT: 
 -------------------------------------
 FILE TABLE: 
 -------------------------------------
-HEAP: Heap:
-Empty
+HEAP: Empty
 
 -------------------------------------
-
 ProgramState: 
-ID: 0
+ID: 1
 STACK: 
 1: Int varc; readFile(varf, varc); print(varc); readFile(varf, varc); print(varc); closeRFile(varf)
 
-TABLE: varf -> /Users/arisoniga/Desktop/Work/IE2/MAP/ASSIGNMENTS/A3/src/test.in
+TABLE: varf -> /Users/arisoniga/Desktop/Work/UBB_FMI_INFO/IE2/MAP/ASSIGNMENTS/A6/src/test.in
 
 OUTPUT: 
 -------------------------------------
-FILE TABLE: 
--------------------------------------
-HEAP: Heap:
-Empty
-
--------------------------------------
-
-ProgramState: 
-ID: 0
+FILE TABLE: /Users/arisoniga/Desktop/Work/UBB_FMI_INFO/IE2/MAP/ASSIGNMENTS/A6/src/test.in -> java.io.BufferedReaderProgramState: 
+ID: 1
 STACK: 
 1: Int varc
 2: readFile(varf, varc); print(varc); readFile(varf, varc); print(varc); closeRFile(varf)
 
-TABLE: varf -> /Users/arisoniga/Desktop/Work/IE2/MAP/ASSIGNMENTS/A3/src/test.in
+TABLE: varf -> /Users/arisoniga/Desktop/Work/UBB_FMI_INFO/IE2/MAP/ASSIGNMENTS/A6/src/test.in
 
 OUTPUT: 
 -------------------------------------
-FILE TABLE: 
--------------------------------------
-HEAP: Heap:
-Empty
-
--------------------------------------
-
-ProgramState: 
-ID: 0
+FILE TABLE: /Users/arisoniga/Desktop/Work/UBB_FMI_INFO/IE2/MAP/ASSIGNMENTS/A6/src/test.in -> java.io.BufferedReaderProgramState: 
+ID: 1
 STACK: 
 1: readFile(varf, varc); print(varc); readFile(varf, varc); print(varc); closeRFile(varf)
 
-TABLE: varf -> /Users/arisoniga/Desktop/Work/IE2/MAP/ASSIGNMENTS/A3/src/test.in
+TABLE: varf -> /Users/arisoniga/Desktop/Work/UBB_FMI_INFO/IE2/MAP/ASSIGNMENTS/A6/src/test.in
 varc -> 0
 
 OUTPUT: 
 -------------------------------------
-FILE TABLE: 
--------------------------------------
-HEAP: Heap:
-Empty
-
--------------------------------------
-
-ProgramState: 
-ID: 0
+FILE TABLE: /Users/arisoniga/Desktop/Work/UBB_FMI_INFO/IE2/MAP/ASSIGNMENTS/A6/src/test.in -> java.io.BufferedReaderProgramState: 
+ID: 1
 STACK: 
 1: readFile(varf, varc)
 2: print(varc); readFile(varf, varc); print(varc); closeRFile(varf)
 
-TABLE: varf -> /Users/arisoniga/Desktop/Work/IE2/MAP/ASSIGNMENTS/A3/src/test.in
+TABLE: varf -> /Users/arisoniga/Desktop/Work/UBB_FMI_INFO/IE2/MAP/ASSIGNMENTS/A6/src/test.in
 varc -> 0
 
 OUTPUT: 
 -------------------------------------
-FILE TABLE: 
--------------------------------------
-HEAP: Heap:
-Empty
-
--------------------------------------
-
-ProgramState: 
-ID: 0
+FILE TABLE: /Users/arisoniga/Desktop/Work/UBB_FMI_INFO/IE2/MAP/ASSIGNMENTS/A6/src/test.in -> java.io.BufferedReaderProgramState: 
+ID: 1
 STACK: 
 1: print(varc); readFile(varf, varc); print(varc); closeRFile(varf)
 
-TABLE: varf -> /Users/arisoniga/Desktop/Work/IE2/MAP/ASSIGNMENTS/A3/src/test.in
-varc -> 0
+TABLE: varf -> /Users/arisoniga/Desktop/Work/UBB_FMI_INFO/IE2/MAP/ASSIGNMENTS/A6/src/test.in
+varc -> 15
 
 OUTPUT: 
 -------------------------------------
-FILE TABLE: 
--------------------------------------
-HEAP: Heap:
-Empty
-
--------------------------------------
-
-ProgramState: 
-ID: 0
+FILE TABLE: /Users/arisoniga/Desktop/Work/UBB_FMI_INFO/IE2/MAP/ASSIGNMENTS/A6/src/test.in -> java.io.BufferedReaderProgramState: 
+ID: 1
 STACK: 
 1: print(varc)
 2: readFile(varf, varc); print(varc); closeRFile(varf)
 
-TABLE: varf -> /Users/arisoniga/Desktop/Work/IE2/MAP/ASSIGNMENTS/A3/src/test.in
-varc -> 0
+TABLE: varf -> /Users/arisoniga/Desktop/Work/UBB_FMI_INFO/IE2/MAP/ASSIGNMENTS/A6/src/test.in
+varc -> 15
 
 OUTPUT: 
 -------------------------------------
-FILE TABLE: 
--------------------------------------
-HEAP: Heap:
-Empty
-
--------------------------------------
-
-ProgramState: 
-ID: 0
+FILE TABLE: /Users/arisoniga/Desktop/Work/UBB_FMI_INFO/IE2/MAP/ASSIGNMENTS/A6/src/test.in -> java.io.BufferedReaderProgramState: 
+ID: 1
 STACK: 
 1: readFile(varf, varc); print(varc); closeRFile(varf)
 
-TABLE: varf -> /Users/arisoniga/Desktop/Work/IE2/MAP/ASSIGNMENTS/A3/src/test.in
-varc -> 0
+TABLE: varf -> /Users/arisoniga/Desktop/Work/UBB_FMI_INFO/IE2/MAP/ASSIGNMENTS/A6/src/test.in
+varc -> 15
 
-OUTPUT: 0
-
--------------------------------------
-FILE TABLE: 
--------------------------------------
-HEAP: Heap:
-Empty
+OUTPUT: 15
 
 -------------------------------------
-
-ProgramState: 
-ID: 0
+FILE TABLE: /Users/arisoniga/Desktop/Work/UBB_FMI_INFO/IE2/MAP/ASSIGNMENTS/A6/src/test.in -> java.io.BufferedReaderProgramState: 
+ID: 1
 STACK: 
 1: readFile(varf, varc)
 2: print(varc); closeRFile(varf)
 
-TABLE: varf -> /Users/arisoniga/Desktop/Work/IE2/MAP/ASSIGNMENTS/A3/src/test.in
-varc -> 0
+TABLE: varf -> /Users/arisoniga/Desktop/Work/UBB_FMI_INFO/IE2/MAP/ASSIGNMENTS/A6/src/test.in
+varc -> 15
 
-OUTPUT: 0
-
--------------------------------------
-FILE TABLE: 
--------------------------------------
-HEAP: Heap:
-Empty
+OUTPUT: 15
 
 -------------------------------------
-
-ProgramState: 
-ID: 0
+FILE TABLE: /Users/arisoniga/Desktop/Work/UBB_FMI_INFO/IE2/MAP/ASSIGNMENTS/A6/src/test.in -> java.io.BufferedReaderProgramState: 
+ID: 1
 STACK: 
 1: print(varc); closeRFile(varf)
 
-TABLE: varf -> /Users/arisoniga/Desktop/Work/IE2/MAP/ASSIGNMENTS/A3/src/test.in
-varc -> 0
+TABLE: varf -> /Users/arisoniga/Desktop/Work/UBB_FMI_INFO/IE2/MAP/ASSIGNMENTS/A6/src/test.in
+varc -> 50
 
-OUTPUT: 0
-
--------------------------------------
-FILE TABLE: 
--------------------------------------
-HEAP: Heap:
-Empty
+OUTPUT: 15
 
 -------------------------------------
-
-ProgramState: 
-ID: 0
+FILE TABLE: /Users/arisoniga/Desktop/Work/UBB_FMI_INFO/IE2/MAP/ASSIGNMENTS/A6/src/test.in -> java.io.BufferedReaderProgramState: 
+ID: 1
 STACK: 
 1: print(varc)
 2: closeRFile(varf)
 
-TABLE: varf -> /Users/arisoniga/Desktop/Work/IE2/MAP/ASSIGNMENTS/A3/src/test.in
-varc -> 0
+TABLE: varf -> /Users/arisoniga/Desktop/Work/UBB_FMI_INFO/IE2/MAP/ASSIGNMENTS/A6/src/test.in
+varc -> 50
 
-OUTPUT: 0
-
--------------------------------------
-FILE TABLE: 
--------------------------------------
-HEAP: Heap:
-Empty
+OUTPUT: 15
 
 -------------------------------------
-
-ProgramState: 
-ID: 0
+FILE TABLE: /Users/arisoniga/Desktop/Work/UBB_FMI_INFO/IE2/MAP/ASSIGNMENTS/A6/src/test.in -> java.io.BufferedReaderProgramState: 
+ID: 1
 STACK: 
 1: closeRFile(varf)
 
-TABLE: varf -> /Users/arisoniga/Desktop/Work/IE2/MAP/ASSIGNMENTS/A3/src/test.in
-varc -> 0
+TABLE: varf -> /Users/arisoniga/Desktop/Work/UBB_FMI_INFO/IE2/MAP/ASSIGNMENTS/A6/src/test.in
+varc -> 50
 
-OUTPUT: 0
-0
-
--------------------------------------
-FILE TABLE: 
--------------------------------------
-HEAP: Heap:
-Empty
+OUTPUT: 15
+50
 
 -------------------------------------
-
-ProgramState: 
-ID: 0
+FILE TABLE: /Users/arisoniga/Desktop/Work/UBB_FMI_INFO/IE2/MAP/ASSIGNMENTS/A6/src/test.in -> java.io.BufferedReaderProgramState: 
+ID: 1
 STACK: 
 
-TABLE: varf -> /Users/arisoniga/Desktop/Work/IE2/MAP/ASSIGNMENTS/A3/src/test.in
-varc -> 0
+TABLE: varf -> /Users/arisoniga/Desktop/Work/UBB_FMI_INFO/IE2/MAP/ASSIGNMENTS/A6/src/test.in
+varc -> 50
 
-OUTPUT: 0
-0
+OUTPUT: 15
+50
 
 -------------------------------------
 FILE TABLE: 
 -------------------------------------
-HEAP: Heap:
-Empty
+HEAP: Empty
 
 -------------------------------------
-

@@ -1,5 +1,5 @@
 ProgramState: 
-ID: 1
+ID: 0
 STACK: 
 1: Int v
 2: Ref(Int) a; v = 10; new(a, 22); fork(wH(a, 30); v = 32; print(v); print(rH(a))); print(v); print(rH(a))
@@ -9,13 +9,11 @@ OUTPUT:
 -------------------------------------
 FILE TABLE: 
 -------------------------------------
-HEAP: Heap:
-Empty
+HEAP: Empty
 
 -------------------------------------
-
 ProgramState: 
-ID: 1
+ID: 0
 STACK: 
 1: Ref(Int) a; v = 10; new(a, 22); fork(wH(a, 30); v = 32; print(v); print(rH(a))); print(v); print(rH(a))
 
@@ -25,13 +23,11 @@ OUTPUT:
 -------------------------------------
 FILE TABLE: 
 -------------------------------------
-HEAP: Heap:
-Empty
+HEAP: Empty
 
 -------------------------------------
-
 ProgramState: 
-ID: 1
+ID: 0
 STACK: 
 1: Ref(Int) a
 2: v = 10; new(a, 22); fork(wH(a, 30); v = 32; print(v); print(rH(a))); print(v); print(rH(a))
@@ -42,13 +38,11 @@ OUTPUT:
 -------------------------------------
 FILE TABLE: 
 -------------------------------------
-HEAP: Heap:
-Empty
+HEAP: Empty
 
 -------------------------------------
-
 ProgramState: 
-ID: 1
+ID: 0
 STACK: 
 1: v = 10; new(a, 22); fork(wH(a, 30); v = 32; print(v); print(rH(a))); print(v); print(rH(a))
 
@@ -59,13 +53,11 @@ OUTPUT:
 -------------------------------------
 FILE TABLE: 
 -------------------------------------
-HEAP: Heap:
-Empty
+HEAP: Empty
 
 -------------------------------------
-
 ProgramState: 
-ID: 1
+ID: 0
 STACK: 
 1: v = 10
 2: new(a, 22); fork(wH(a, 30); v = 32; print(v); print(rH(a))); print(v); print(rH(a))
@@ -77,13 +69,11 @@ OUTPUT:
 -------------------------------------
 FILE TABLE: 
 -------------------------------------
-HEAP: Heap:
-Empty
+HEAP: Empty
 
 -------------------------------------
-
 ProgramState: 
-ID: 1
+ID: 0
 STACK: 
 1: new(a, 22); fork(wH(a, 30); v = 32; print(v); print(rH(a))); print(v); print(rH(a))
 
@@ -94,13 +84,11 @@ OUTPUT:
 -------------------------------------
 FILE TABLE: 
 -------------------------------------
-HEAP: Heap:
-Empty
+HEAP: Empty
 
 -------------------------------------
-
 ProgramState: 
-ID: 1
+ID: 0
 STACK: 
 1: new(a, 22)
 2: fork(wH(a, 30); v = 32; print(v); print(rH(a))); print(v); print(rH(a))
@@ -112,13 +100,11 @@ OUTPUT:
 -------------------------------------
 FILE TABLE: 
 -------------------------------------
-HEAP: Heap:
-Empty
+HEAP: Empty
 
 -------------------------------------
-
 ProgramState: 
-ID: 1
+ID: 0
 STACK: 
 1: fork(wH(a, 30); v = 32; print(v); print(rH(a))); print(v); print(rH(a))
 
@@ -129,13 +115,11 @@ OUTPUT:
 -------------------------------------
 FILE TABLE: 
 -------------------------------------
-HEAP: Heap:
-1 -> 22
+HEAP: 1 -> 22
 
 -------------------------------------
-
 ProgramState: 
-ID: 1
+ID: 0
 STACK: 
 1: fork(wH(a, 30); v = 32; print(v); print(rH(a)))
 2: print(v); print(rH(a))
@@ -147,13 +131,11 @@ OUTPUT:
 -------------------------------------
 FILE TABLE: 
 -------------------------------------
-HEAP: Heap:
-1 -> 22
+HEAP: 1 -> 22
 
 -------------------------------------
-
 ProgramState: 
-ID: 1
+ID: 0
 STACK: 
 1: print(v); print(rH(a))
 
@@ -164,13 +146,11 @@ OUTPUT:
 -------------------------------------
 FILE TABLE: 
 -------------------------------------
-HEAP: Heap:
-1 -> 22
+HEAP: 1 -> 22
 
 -------------------------------------
-
 ProgramState: 
-ID: 2
+ID: 1
 STACK: 
 1: wH(a, 30); v = 32; print(v); print(rH(a))
 
@@ -181,13 +161,11 @@ OUTPUT:
 -------------------------------------
 FILE TABLE: 
 -------------------------------------
-HEAP: Heap:
-1 -> 22
+HEAP: 1 -> 22
 
 -------------------------------------
-
 ProgramState: 
-ID: 1
+ID: 0
 STACK: 
 1: print(v)
 2: print(rH(a))
@@ -199,13 +177,11 @@ OUTPUT:
 -------------------------------------
 FILE TABLE: 
 -------------------------------------
-HEAP: Heap:
-1 -> 22
+HEAP: 1 -> 22
 
 -------------------------------------
-
 ProgramState: 
-ID: 2
+ID: 1
 STACK: 
 1: wH(a, 30)
 2: v = 32; print(v); print(rH(a))
@@ -217,13 +193,11 @@ OUTPUT:
 -------------------------------------
 FILE TABLE: 
 -------------------------------------
-HEAP: Heap:
-1 -> 22
+HEAP: 1 -> 22
 
 -------------------------------------
-
 ProgramState: 
-ID: 1
+ID: 0
 STACK: 
 1: print(rH(a))
 
@@ -235,13 +209,11 @@ OUTPUT: 10
 -------------------------------------
 FILE TABLE: 
 -------------------------------------
-HEAP: Heap:
-1 -> 30
+HEAP: 1 -> 30
 
 -------------------------------------
-
 ProgramState: 
-ID: 2
+ID: 1
 STACK: 
 1: v = 32; print(v); print(rH(a))
 
@@ -253,13 +225,11 @@ OUTPUT: 10
 -------------------------------------
 FILE TABLE: 
 -------------------------------------
-HEAP: Heap:
-1 -> 30
+HEAP: 1 -> 30
 
 -------------------------------------
-
 ProgramState: 
-ID: 1
+ID: 0
 STACK: 
 
 TABLE: a -> (1, Int)
@@ -271,13 +241,11 @@ OUTPUT: 10
 -------------------------------------
 FILE TABLE: 
 -------------------------------------
-HEAP: Heap:
-1 -> 30
+HEAP: 1 -> 30
 
 -------------------------------------
-
 ProgramState: 
-ID: 2
+ID: 1
 STACK: 
 1: v = 32
 2: print(v); print(rH(a))
@@ -291,13 +259,11 @@ OUTPUT: 10
 -------------------------------------
 FILE TABLE: 
 -------------------------------------
-HEAP: Heap:
-1 -> 30
+HEAP: 1 -> 30
 
 -------------------------------------
-
 ProgramState: 
-ID: 2
+ID: 1
 STACK: 
 1: print(v); print(rH(a))
 
@@ -310,13 +276,11 @@ OUTPUT: 10
 -------------------------------------
 FILE TABLE: 
 -------------------------------------
-HEAP: Heap:
-1 -> 30
+HEAP: 1 -> 30
 
 -------------------------------------
-
 ProgramState: 
-ID: 2
+ID: 1
 STACK: 
 1: print(v)
 2: print(rH(a))
@@ -330,13 +294,11 @@ OUTPUT: 10
 -------------------------------------
 FILE TABLE: 
 -------------------------------------
-HEAP: Heap:
-1 -> 30
+HEAP: 1 -> 30
 
 -------------------------------------
-
 ProgramState: 
-ID: 2
+ID: 1
 STACK: 
 1: print(rH(a))
 
@@ -350,13 +312,11 @@ OUTPUT: 10
 -------------------------------------
 FILE TABLE: 
 -------------------------------------
-HEAP: Heap:
-1 -> 30
+HEAP: 1 -> 30
 
 -------------------------------------
-
 ProgramState: 
-ID: 2
+ID: 1
 STACK: 
 
 TABLE: a -> (1, Int)
@@ -370,8 +330,6 @@ OUTPUT: 10
 -------------------------------------
 FILE TABLE: 
 -------------------------------------
-HEAP: Heap:
-1 -> 30
+HEAP: 1 -> 30
 
 -------------------------------------
-

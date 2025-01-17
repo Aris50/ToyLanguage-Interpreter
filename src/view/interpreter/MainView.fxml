@@ -1,15 +1,105 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
 <?import javafx.scene.control.ListView?>
-<?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
 
-<BorderPane prefHeight="676.0" prefWidth="697.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.interpreter.MainController">
-   <center>
-      <HBox prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1350.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.interpreter.MainController">
+   <children>
+      <VBox layoutX="5.0" layoutY="7.0" prefHeight="440.0" prefWidth="238.0">
          <children>
-            <ListView fx:id="hbo" prefHeight="676.0" prefWidth="260.0" />
+            <Label text="Examples:">
+               <font>
+                  <Font name="Avenir Roman" size="35.0" />
+               </font>
+            </Label>
+            <ListView fx:id="exampleListView" prefHeight="400.0" prefWidth="238.0" />
+         </children>
+      </VBox>
+      <VBox layoutX="345.0" layoutY="227.0" prefHeight="234.0" prefWidth="561.0">
+         <children>
+            <Label text="Output:">
+               <font>
+                  <Font name="Avenir Roman" size="35.0" />
+               </font>
+            </Label>
+            <ListView fx:id="outputListView" prefHeight="177.0" prefWidth="561.0" />
+         </children>
+      </VBox>
+      <Button layoutX="10.0" layoutY="460.0" mnemonicParsing="false" onAction="#handleRunExample" text="Execute Example" />
+      <Button layoutX="120.0" layoutY="460.0" mnemonicParsing="false" onAction="#handleExit" text="Exit" />
+      <VBox layoutX="346.0" layoutY="4.0" prefHeight="224.0" prefWidth="571.0">
+         <children>
+            <Label text="Executing:">
+               <font>
+                  <Font name="Avenir Roman" size="35.0" />
+               </font>
+            </Label>
+            <ListView fx:id="executingListView" prefHeight="200.0" prefWidth="200.0" />
+            <Button fx:id="oneStepButton" mnemonicParsing="false" onAction="#handleOneStepButton" text="One Step Exec">
+               <font>
+                  <Font name="Avenir Roman" size="13.0" />
+               </font></Button>
+         </children>
+      </VBox>
+      <HBox layoutX="1.0" layoutY="527.0" prefHeight="267.0" prefWidth="1347.0">
+         <children>
+            <VBox prefHeight="267.0" prefWidth="256.0">
+               <children>
+                  <Label text="SymbolTable">
+                     <font>
+                        <Font size="35.0" />
+                     </font>
+                  </Label>
+                  <ListView fx:id="symTableListView" prefHeight="249.0" prefWidth="253.0" />
+               </children>
+            </VBox>
+            <VBox prefHeight="267.0" prefWidth="284.0">
+               <children>
+                  <Label text="Stack">
+                     <font>
+                        <Font size="35.0" />
+                     </font>
+                  </Label>
+                  <ListView fx:id="stackListView" prefHeight="256.0" prefWidth="284.0" />
+               </children>
+            </VBox>
+            <VBox prefHeight="267.0" prefWidth="284.0">
+               <children>
+                  <Label text="Heap">
+                     <font>
+                        <Font size="35.0" />
+                     </font>
+                  </Label>
+                  <ListView fx:id="heapListView" prefHeight="251.0" prefWidth="284.0" />
+               </children>
+            </VBox>
+            <VBox prefHeight="267.0" prefWidth="262.0">
+               <children>
+                  <Label text="FileTable">
+                     <font>
+                        <Font size="35.0" />
+                     </font>
+                  </Label>
+                  <ListView fx:id="fileTableListView" prefHeight="249.0" prefWidth="262.0" />
+               </children>
+            </VBox>
+            <VBox prefHeight="267.0" prefWidth="261.0">
+               <children>
+                  <Label fx:id="prgStateIdLabel" text="PrgStateID">
+                     <font>
+                        <Font size="35.0" />
+                     </font>
+                  </Label>
+                  <ListView fx:id="prgStateIDListView" prefHeight="251.0" prefWidth="261.0" />
+               </children>
+            </VBox>
          </children>
       </HBox>
-   </center>
-</BorderPane>
+      <Button fx:id="clearButton" layoutX="157.0" layoutY="461.0" mnemonicParsing="false" onAction="#handleClearAll" text="Clear" />
+   </children>
+</Pane>

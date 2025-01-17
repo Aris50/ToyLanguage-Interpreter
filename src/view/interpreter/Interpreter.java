@@ -1,4 +1,4 @@
-package view.interpreter;
+/*package view.interpreter;
 
 import Controller.Controller;
 import model.adt.*;
@@ -50,3 +50,4 @@ public class Interpreter {
         menu.show();
     }
 }
+*/

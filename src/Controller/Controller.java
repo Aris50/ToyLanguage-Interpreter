@@ -107,19 +107,10 @@ public class Controller implements IController {
         prgList.addAll(newPrgList);
 
         //After the execution, print the PrgState List into the log file
-        prgList.forEach(prg -> repo.logPrgStateExec(prg));
+        prgList.forEach(this::logPrgStateExec);
 
         //Save the current programs in the repository
         repo.setPrgList(prgList);
-    }
-
-    //TODO-handle the function
-    public void displayCurrent() {
-        ProgramState state = repo.getCurrent();
-        if (flag) {
-            System.out.println(state);
-            repo.logPrgStateExec(state);
-        }
     }
 
     public IRepository getRepo() {return repo;}
@@ -134,7 +125,14 @@ public class Controller implements IController {
         return inPrgList.stream().filter(ProgramState::isNotCompleted).collect(Collectors.toList());
     }
 
-    public String getPrgStatesOutput() {
-        return "Not working yet, get over it!";
+    public void logPrgStateExec(ProgramState p)
+    {
+        String stackText = p.getExeStack().toString();
+        String symTableText = p.getSymTable().toString();
+        String fileTableText = p.getFileTable().toString();
+        String heapText = p.getHeap().toString();
+        String outText=p.getOut().toString();
+        String prgStateIDText = Integer.toString(p.getId());
+        repo.logPrgStateExec(p, stackText, symTableText, fileTableText, heapText, prgStateIDText, outText);
     }
 }
