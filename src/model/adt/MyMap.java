@@ -2,6 +2,8 @@ package model.adt;
 
 import java.util.HashMap;
 import java.util.Map;
+import java.util.stream.Stream;
+
 import exceptions.KeyNotFoundException;
 import model.values.IValue;
 
@@ -49,5 +51,9 @@ public class MyMap<K, V> implements IMyMap<K, V> {
             }
         }
         return deepCopiedMap;
+    }
+
+    public Stream<Map.Entry<K, V>> stream() {
+        return map.entrySet().stream();
     }
 }

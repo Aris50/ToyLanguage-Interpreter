@@ -18,6 +18,7 @@ import repository.Repository;
 import view.commands.RunExample;
 
 import java.util.List;
+import java.util.Map;
 
 public class MainController {
     @FXML
@@ -41,6 +42,7 @@ public class MainController {
     private Label prgStateIdLabel;
     private RunExample currentRunExample;
     private String currentSelectedExample;
+    private ProgramState selectedProgram;
 
     @FXML
     public void initialize() {
@@ -54,22 +56,17 @@ public class MainController {
             if (newValue != null) {
                 updateExecutingListView(newValue);
                 currentSelectedExample = newValue;
+                clearAll();
             }
         });
         prgStateIDListView.getSelectionModel().selectedItemProperty().addListener((observable, oldValue, newValue) -> {
             if (newValue != null) {
                 List<ProgramState> prgList = currentRunExample.getController().getRepo().getPrgList();
-                for (ProgramState prg : prgList) {
-                    if (prg.getId() == Integer.parseInt(newValue)) {
-
-                        stackListView.getItems().clear();
-                        symTableListView.getItems().clear();
-
-                        stackListView.getItems().addAll(prg.getExeStack().toString());
-                        symTableListView.getItems().addAll(prg.getSymTable().toString());
-
-
-                    }
+                int id=Integer.parseInt(newValue);
+                var selectedProgram=prgList.stream().filter(p->p.getId()==id).toList();
+                if(!(selectedProgram.isEmpty())){
+                    this.selectedProgram=selectedProgram.getFirst();
+                    updateUi();
                 }
             }
         });
@@ -213,7 +210,7 @@ public class MainController {
             stmt.typecheck(new MyMap<>());
             ProgramState prg = new ProgramState(new MyStack<>(), new MyMap<>(), new MyList<>(), stmt, new MyMap<>(), new MyHeap());
             try {
-                IRepository repo = new Repository(logFilePath, prg, outputListView, stackListView, heapListView, symTableListView, fileTableListView, prgStateIDListView, prgStateIdLabel);
+                IRepository repo = new Repository(logFilePath, prg);
                 Controller ctr = new Controller(repo);
                 RunExample runExample = new RunExample(selectedExample, stmt.toString(), ctr);
                 runExample.execute();
@@ -228,6 +225,25 @@ public class MainController {
         }
     }
 
+    private void updateUi(){
+        var prgList = currentRunExample.getController().getPrgStateList();
+        if(selectedProgram==null || !(prgList.isEmpty()) && prgList.stream().filter(p -> p.getId() == selectedProgram.getId()).toList().isEmpty()){
+            selectedProgram = prgList.getFirst();
+        }
+        outputListView.getItems().clear();
+        outputListView.getItems().addAll(selectedProgram.getOut().stream().map(Object::toString).toList());
+        symTableListView.getItems().clear();
+        symTableListView.getItems().addAll(selectedProgram.getSymTable().stream().map(Object::toString).toList());
+
+        fileTableListView.getItems().clear();
+        fileTableListView.getItems().addAll(selectedProgram.getFileTable().stream().map(Map.Entry::getKey).toList());
+        heapListView.getItems().clear();
+        heapListView.getItems().addAll(selectedProgram.getHeap().stream().map(Object::toString).toList());
+        prgStateIdLabel.setText("Total Id's:" + prgList.size());
+        stackListView.getItems().clear();
+        stackListView.getItems().addAll(selectedProgram.getExeStack().stream().map(Object::toString).toList());
+
+    }
     @FXML
     private void handleOneStepButton() {
         if (currentRunExample == null && exampleListView.getSelectionModel().getSelectedItem() == null) {
@@ -310,11 +326,14 @@ public class MainController {
                 stmt.typecheck(new MyMap<>());
                 ProgramState prg = new ProgramState(new MyStack<>(), new MyMap<>(), new MyList<>(), stmt, new MyMap<>(), new MyHeap());
                 try {
-                    IRepository repo = new Repository(logFilePath, prg, outputListView, stackListView, heapListView, symTableListView, fileTableListView, prgStateIDListView, prgStateIdLabel);
+                    IRepository repo = new Repository(logFilePath, prg);
                     Controller ctr = new Controller(repo);
                     RunExample runExample = new RunExample(selectedExample, stmt.toString(), ctr);
                     currentRunExample = runExample;
                     currentRunExample.executeOnce();
+                    prgStateIDListView.getItems().clear();
+                    prgStateIDListView.getItems().addAll(ctr.getPrgStateList().stream().map(p->Integer.toString(p.getId())).toList());
+                    updateUi();
                 } catch (Exception e) {
                     showAlert("Repository error", "Error creating repository: " + e.getMessage());
                     return;
@@ -326,13 +345,19 @@ public class MainController {
         } else {
             try {
                 currentRunExample.executeOnce();
+                updateUi();
+                prgStateIDListView.getItems().clear();
+                prgStateIDListView.getItems().addAll(currentRunExample.getController().getPrgStateList().stream().map(p->Integer.toString(p.getId())).toList());
                 if (currentRunExample.getController().getRepo().getPrgList().isEmpty()) {
                     showDone();
                     currentRunExample = null;
                 }
-            } catch (Exception e) {
-                showAlert("Execution error", "Error during execution: " + e.getMessage());
             }
+            catch (Exception e) {
+                showAlert("Execution error", "Error during execution: " + e.getMessage());
+                currentRunExample=null;
+            }
+
         }
     }
 

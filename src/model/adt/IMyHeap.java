@@ -3,6 +3,8 @@ package model.adt;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Set;
+import java.util.stream.Stream;
+
 import exceptions.NullRefferenceException;
 import model.values.IValue;
 
@@ -19,4 +21,6 @@ public interface IMyHeap {
     Set<Integer> getAddresses();
     int allocate(IValue value);
     void deallocate(int address) throws NullRefferenceException;
+
+   Stream<Map.Entry<Integer,IValue>> stream();
 }

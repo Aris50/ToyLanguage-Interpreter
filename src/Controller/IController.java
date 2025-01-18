@@ -10,4 +10,5 @@ public interface IController {
     public void setFlag(boolean value);
     public IRepository getRepo();
     List<ProgramState> removeCompletedPrg(List<ProgramState> inPrgList);
+    public List<ProgramState> getPrgStateList();
 }

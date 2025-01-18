@@ -21,14 +21,10 @@ public class RunExample extends Command{
     }
 
     public void executeOnce() {
-        try {
-            List<ProgramState> prgList = ctr.getRepo().getPrgList();
-            ctr.oneStepForAllPrg(prgList);
-            prgList = ctr.removeCompletedPrg(ctr.getRepo().getPrgList());
-            ctr.getRepo().setPrgList(prgList);
-        } catch (Exception e) {
-            System.out.println("Error during one step execution: " + e.getMessage());
-        }
+        List<ProgramState> prgList = ctr.getRepo().getPrgList();
+        ctr.oneStepForAllPrg(prgList);
+        prgList = ctr.removeCompletedPrg(ctr.getRepo().getPrgList());
+        ctr.getRepo().setPrgList(prgList);
     }
 
     public Controller getController() {

@@ -2,6 +2,7 @@ package model.adt;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.stream.Stream;
 
 public class MyList<T> implements IMyList<T> {
     private List<T> list;
@@ -33,5 +34,9 @@ public class MyList<T> implements IMyList<T> {
             str.append("\n");
         }
         return "" + str;
+    }
+
+    public Stream<T> stream(){
+        return list.stream();
     }
 }

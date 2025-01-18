@@ -1,6 +1,8 @@
 package model.adt;
 
 import java.util.Stack;
+import java.util.stream.Stream;
+
 import exceptions.EmptyStackException;
 
 public class MyStack<T> implements IMyStack<T>{
@@ -36,6 +38,10 @@ public class MyStack<T> implements IMyStack<T>{
             str.append("\n");
         }
         return "" + str;
+    }
+
+    public Stream<T> stream(){
+        return stack.stream();
     }
 
 }

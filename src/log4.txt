@@ -1,5 +1,5 @@
 ProgramState: 
-ID: 7
+ID: 2
 STACK: 
 1: Int a
 2: a = 10 / 0; print(a)
@@ -12,12 +12,8 @@ FILE TABLE:
 HEAP: Empty
 
 -------------------------------------
-@1: Int a
-2: a = 10 / 0; print(a)
-@@@Empty
-@To be implemented..
 ProgramState: 
-ID: 7
+ID: 2
 STACK: 
 1: a = 10 / 0; print(a)
 
@@ -30,12 +26,8 @@ FILE TABLE:
 HEAP: Empty
 
 -------------------------------------
-@1: a = 10 / 0; print(a)
-@a -> 0
-@@Empty
-@To be implemented..
 ProgramState: 
-ID: 7
+ID: 2
 STACK: 
 1: a = 10 / 0
 2: print(a)
@@ -49,43 +41,3 @@ FILE TABLE:
 HEAP: Empty
 
 -------------------------------------
-@1: a = 10 / 0
-2: print(a)
-@a -> 0
-@@Empty
-@To be implemented..
-ProgramState: 
-ID: 7
-STACK: 
-1: print(a)
-
-TABLE: a -> 0
-
-OUTPUT: 
--------------------------------------
-FILE TABLE: 
--------------------------------------
-HEAP: Empty
-
--------------------------------------
-@1: print(a)
-@a -> 0
-@@Empty
-@To be implemented..
-ProgramState: 
-ID: 7
-STACK: 
-
-TABLE: a -> 0
-
-OUTPUT: 0
-
--------------------------------------
-FILE TABLE: 
--------------------------------------
-HEAP: Empty
-
--------------------------------------
-@@a -> 0
-@@Empty
-@To be implemented..

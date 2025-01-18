@@ -1,5 +1,7 @@
 package model.adt;
 import java.util.Map;
+import java.util.stream.Stream;
+
 import model.values.IValue;
 
 public interface IMyMap<K, V> {
@@ -9,4 +11,6 @@ public interface IMyMap<K, V> {
     boolean contains(K key);
     Map<K,V> getContent();
     IMyMap<K,V> deepCopy();
+
+    Stream<Map.Entry<K,V>> stream();
 }

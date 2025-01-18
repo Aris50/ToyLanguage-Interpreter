@@ -4,6 +4,7 @@ import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Map;
 import java.util.Set;
+import java.util.stream.Stream;
 
 import exceptions.NullRefferenceException;
 import model.values.IValue;
@@ -70,6 +71,10 @@ public class MyHeap implements IMyHeap{
             result.append(entry.getKey().toString()).append(" -> ").append(entry.getValue().toString()).append("\n");
         }
         return result.toString();
+    }
+
+    public Stream<Map.Entry<Integer,IValue>> stream(){
+        return heap.entrySet().stream();
     }
 
 }

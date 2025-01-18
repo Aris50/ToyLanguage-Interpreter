@@ -80,7 +80,7 @@ public class Controller implements IController {
 
         // Prepare the list of callables
         List<Callable<ProgramState>> callList = prgList.stream()
-                .map((ProgramState p) -> (Callable<ProgramState>) (() -> p.oneStep()))
+                .map((ProgramState p) -> (Callable<ProgramState>) (p::oneStep))
                 .collect(Collectors.toList());
 
         //Start the execution of the callables
@@ -93,14 +93,16 @@ public class Controller implements IController {
                             return future.get();
                         } catch (Exception e) {
                             // Here you can treat the possible exceptions thrown by statements execution
-                            e.printStackTrace();
-                            return null;
+                            //e.printStackTrace();
+                            //return null;
+                            throw new RuntimeException(e.getMessage());
                         }
                     })
                     .filter(p -> p != null)
                     .collect(Collectors.toList());
         } catch (InterruptedException e) {
-            e.printStackTrace();
+            throw new RuntimeException(e.getMessage());
+            //e.printStackTrace();
         }
 
         //Add the new created threads to the list of existing threads
@@ -133,6 +135,10 @@ public class Controller implements IController {
         String heapText = p.getHeap().toString();
         String outText=p.getOut().toString();
         String prgStateIDText = Integer.toString(p.getId());
-        repo.logPrgStateExec(p, stackText, symTableText, fileTableText, heapText, prgStateIDText, outText);
+        repo.logPrgStateExec(p);
+    }
+
+    public List<ProgramState> getPrgStateList(){
+        return this.repo.getPrgList();
     }
 }
