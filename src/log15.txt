@@ -1,8 +1,8 @@
 ProgramState: 
-ID: 10
+ID: 1
 STACK: 
-1: Ref(Int) v
-2: new(v, 20); print(rH(v)); wH(v, 30); print(rH(v) + 5)
+1: Int v1
+2: Int v2; v1 = 2; v2 = 3; IF(v2) THEN {print((v1 * v2)-(v1+v2))}ELSE {print(v1)}
 
 TABLE: 
 OUTPUT: 
@@ -13,11 +13,11 @@ HEAP: Empty
 
 -------------------------------------
 ProgramState: 
-ID: 10
+ID: 1
 STACK: 
-1: new(v, 20); print(rH(v)); wH(v, 30); print(rH(v) + 5)
+1: Int v2; v1 = 2; v2 = 3; IF(v2) THEN {print((v1 * v2)-(v1+v2))}ELSE {print(v1)}
 
-TABLE: v -> (0, Int)
+TABLE: v1 -> 0
 
 OUTPUT: 
 -------------------------------------
@@ -27,12 +27,12 @@ HEAP: Empty
 
 -------------------------------------
 ProgramState: 
-ID: 10
+ID: 1
 STACK: 
-1: new(v, 20)
-2: print(rH(v)); wH(v, 30); print(rH(v) + 5)
+1: Int v2
+2: v1 = 2; v2 = 3; IF(v2) THEN {print((v1 * v2)-(v1+v2))}ELSE {print(v1)}
 
-TABLE: v -> (0, Int)
+TABLE: v1 -> 0
 
 OUTPUT: 
 -------------------------------------
@@ -42,92 +42,109 @@ HEAP: Empty
 
 -------------------------------------
 ProgramState: 
-ID: 10
+ID: 1
 STACK: 
-1: print(rH(v)); wH(v, 30); print(rH(v) + 5)
+1: v1 = 2; v2 = 3; IF(v2) THEN {print((v1 * v2)-(v1+v2))}ELSE {print(v1)}
 
-TABLE: v -> (1, Int)
+TABLE: v1 -> 0
+v2 -> 0
 
 OUTPUT: 
 -------------------------------------
 FILE TABLE: 
 -------------------------------------
-HEAP: 1 -> 20
+HEAP: Empty
 
 -------------------------------------
 ProgramState: 
-ID: 10
+ID: 1
 STACK: 
-1: print(rH(v))
-2: wH(v, 30); print(rH(v) + 5)
+1: v1 = 2
+2: v2 = 3; IF(v2) THEN {print((v1 * v2)-(v1+v2))}ELSE {print(v1)}
 
-TABLE: v -> (1, Int)
+TABLE: v1 -> 0
+v2 -> 0
 
 OUTPUT: 
 -------------------------------------
 FILE TABLE: 
 -------------------------------------
-HEAP: 1 -> 20
+HEAP: Empty
 
 -------------------------------------
 ProgramState: 
-ID: 10
+ID: 1
 STACK: 
-1: wH(v, 30); print(rH(v) + 5)
+1: v2 = 3; IF(v2) THEN {print((v1 * v2)-(v1+v2))}ELSE {print(v1)}
 
-TABLE: v -> (1, Int)
+TABLE: v1 -> 2
+v2 -> 0
 
-OUTPUT: 20
+OUTPUT: 
+-------------------------------------
+FILE TABLE: 
+-------------------------------------
+HEAP: Empty
+
+-------------------------------------
+ProgramState: 
+ID: 1
+STACK: 
+1: v2 = 3
+2: IF(v2) THEN {print((v1 * v2)-(v1+v2))}ELSE {print(v1)}
+
+TABLE: v1 -> 2
+v2 -> 0
+
+OUTPUT: 
+-------------------------------------
+FILE TABLE: 
+-------------------------------------
+HEAP: Empty
+
+-------------------------------------
+ProgramState: 
+ID: 1
+STACK: 
+1: IF(v2) THEN {print((v1 * v2)-(v1+v2))}ELSE {print(v1)}
+
+TABLE: v1 -> 2
+v2 -> 3
+
+OUTPUT: 
+-------------------------------------
+FILE TABLE: 
+-------------------------------------
+HEAP: Empty
+
+-------------------------------------
+ProgramState: 
+ID: 1
+STACK: 
+1: print((v1 * v2)-(v1+v2))
+
+TABLE: v1 -> 2
+v2 -> 3
+
+OUTPUT: 
+-------------------------------------
+FILE TABLE: 
+-------------------------------------
+HEAP: Empty
+
+-------------------------------------
+ProgramState: 
+ID: 1
+STACK: 
+
+TABLE: v1 -> 2
+v2 -> 3
+
+OUTPUT: 1
 
 -------------------------------------
 FILE TABLE: 
 -------------------------------------
-HEAP: 1 -> 20
-
--------------------------------------
-ProgramState: 
-ID: 10
-STACK: 
-1: wH(v, 30)
-2: print(rH(v) + 5)
-
-TABLE: v -> (1, Int)
-
-OUTPUT: 20
-
--------------------------------------
-FILE TABLE: 
--------------------------------------
-HEAP: 1 -> 20
-
--------------------------------------
-ProgramState: 
-ID: 10
-STACK: 
-1: print(rH(v) + 5)
-
-TABLE: v -> (1, Int)
-
-OUTPUT: 20
-
--------------------------------------
-FILE TABLE: 
--------------------------------------
-HEAP: 1 -> 30
-
--------------------------------------
-ProgramState: 
-ID: 10
-STACK: 
-
-TABLE: v -> (1, Int)
-
-OUTPUT: 20
-35
-
--------------------------------------
-FILE TABLE: 
--------------------------------------
-HEAP: 1 -> 30
+HEAP: Empty
 
 -------------------------------------

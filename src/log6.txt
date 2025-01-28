@@ -1,5 +1,5 @@
 ProgramState: 
-ID: 0
+ID: 6
 STACK: 
 1: Int x
 2: x = 20; Int y; y = 15; IF(x>y) THEN {print(x)}ELSE {print(y)}
@@ -13,13 +13,133 @@ HEAP: Empty
 
 -------------------------------------
 ProgramState: 
-ID: 0
+ID: 6
 STACK: 
 1: x = 20; Int y; y = 15; IF(x>y) THEN {print(x)}ELSE {print(y)}
 
 TABLE: x -> 0
 
 OUTPUT: 
+-------------------------------------
+FILE TABLE: 
+-------------------------------------
+HEAP: Empty
+
+-------------------------------------
+ProgramState: 
+ID: 6
+STACK: 
+1: x = 20
+2: Int y; y = 15; IF(x>y) THEN {print(x)}ELSE {print(y)}
+
+TABLE: x -> 0
+
+OUTPUT: 
+-------------------------------------
+FILE TABLE: 
+-------------------------------------
+HEAP: Empty
+
+-------------------------------------
+ProgramState: 
+ID: 6
+STACK: 
+1: Int y; y = 15; IF(x>y) THEN {print(x)}ELSE {print(y)}
+
+TABLE: x -> 20
+
+OUTPUT: 
+-------------------------------------
+FILE TABLE: 
+-------------------------------------
+HEAP: Empty
+
+-------------------------------------
+ProgramState: 
+ID: 6
+STACK: 
+1: Int y
+2: y = 15; IF(x>y) THEN {print(x)}ELSE {print(y)}
+
+TABLE: x -> 20
+
+OUTPUT: 
+-------------------------------------
+FILE TABLE: 
+-------------------------------------
+HEAP: Empty
+
+-------------------------------------
+ProgramState: 
+ID: 6
+STACK: 
+1: y = 15; IF(x>y) THEN {print(x)}ELSE {print(y)}
+
+TABLE: x -> 20
+y -> 0
+
+OUTPUT: 
+-------------------------------------
+FILE TABLE: 
+-------------------------------------
+HEAP: Empty
+
+-------------------------------------
+ProgramState: 
+ID: 6
+STACK: 
+1: y = 15
+2: IF(x>y) THEN {print(x)}ELSE {print(y)}
+
+TABLE: x -> 20
+y -> 0
+
+OUTPUT: 
+-------------------------------------
+FILE TABLE: 
+-------------------------------------
+HEAP: Empty
+
+-------------------------------------
+ProgramState: 
+ID: 6
+STACK: 
+1: IF(x>y) THEN {print(x)}ELSE {print(y)}
+
+TABLE: x -> 20
+y -> 15
+
+OUTPUT: 
+-------------------------------------
+FILE TABLE: 
+-------------------------------------
+HEAP: Empty
+
+-------------------------------------
+ProgramState: 
+ID: 6
+STACK: 
+1: print(x)
+
+TABLE: x -> 20
+y -> 15
+
+OUTPUT: 
+-------------------------------------
+FILE TABLE: 
+-------------------------------------
+HEAP: Empty
+
+-------------------------------------
+ProgramState: 
+ID: 6
+STACK: 
+
+TABLE: x -> 20
+y -> 15
+
+OUTPUT: 20
+
 -------------------------------------
 FILE TABLE: 
 -------------------------------------

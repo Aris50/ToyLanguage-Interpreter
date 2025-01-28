@@ -1,5 +1,5 @@
 ProgramState: 
-ID: 5
+ID: 12
 STACK: 
 1: Int v
 2: v = 4; while(v>0) print(v); v = v - 1; print(v)
@@ -13,7 +13,7 @@ HEAP: Empty
 
 -------------------------------------
 ProgramState: 
-ID: 5
+ID: 12
 STACK: 
 1: v = 4; while(v>0) print(v); v = v - 1; print(v)
 
@@ -27,7 +27,7 @@ HEAP: Empty
 
 -------------------------------------
 ProgramState: 
-ID: 5
+ID: 12
 STACK: 
 1: v = 4
 2: while(v>0) print(v); v = v - 1; print(v)
@@ -42,7 +42,7 @@ HEAP: Empty
 
 -------------------------------------
 ProgramState: 
-ID: 5
+ID: 12
 STACK: 
 1: while(v>0) print(v); v = v - 1; print(v)
 
@@ -56,7 +56,7 @@ HEAP: Empty
 
 -------------------------------------
 ProgramState: 
-ID: 5
+ID: 12
 STACK: 
 1: while(v>0) print(v); v = v - 1
 2: print(v)
@@ -71,7 +71,7 @@ HEAP: Empty
 
 -------------------------------------
 ProgramState: 
-ID: 5
+ID: 12
 STACK: 
 1: print(v); v = v - 1
 2: while(v>0) print(v); v = v - 1
@@ -87,7 +87,7 @@ HEAP: Empty
 
 -------------------------------------
 ProgramState: 
-ID: 5
+ID: 12
 STACK: 
 1: print(v)
 2: v = v - 1
@@ -104,7 +104,7 @@ HEAP: Empty
 
 -------------------------------------
 ProgramState: 
-ID: 5
+ID: 12
 STACK: 
 1: v = v - 1
 2: while(v>0) print(v); v = v - 1
@@ -121,7 +121,7 @@ HEAP: Empty
 
 -------------------------------------
 ProgramState: 
-ID: 5
+ID: 12
 STACK: 
 1: while(v>0) print(v); v = v - 1
 2: print(v)
@@ -137,7 +137,7 @@ HEAP: Empty
 
 -------------------------------------
 ProgramState: 
-ID: 5
+ID: 12
 STACK: 
 1: print(v); v = v - 1
 2: while(v>0) print(v); v = v - 1
@@ -154,7 +154,7 @@ HEAP: Empty
 
 -------------------------------------
 ProgramState: 
-ID: 5
+ID: 12
 STACK: 
 1: print(v)
 2: v = v - 1
@@ -172,7 +172,7 @@ HEAP: Empty
 
 -------------------------------------
 ProgramState: 
-ID: 5
+ID: 12
 STACK: 
 1: v = v - 1
 2: while(v>0) print(v); v = v - 1
@@ -190,7 +190,7 @@ HEAP: Empty
 
 -------------------------------------
 ProgramState: 
-ID: 5
+ID: 12
 STACK: 
 1: while(v>0) print(v); v = v - 1
 2: print(v)
@@ -207,7 +207,7 @@ HEAP: Empty
 
 -------------------------------------
 ProgramState: 
-ID: 5
+ID: 12
 STACK: 
 1: print(v); v = v - 1
 2: while(v>0) print(v); v = v - 1
@@ -225,7 +225,7 @@ HEAP: Empty
 
 -------------------------------------
 ProgramState: 
-ID: 5
+ID: 12
 STACK: 
 1: print(v)
 2: v = v - 1
@@ -244,7 +244,7 @@ HEAP: Empty
 
 -------------------------------------
 ProgramState: 
-ID: 5
+ID: 12
 STACK: 
 1: v = v - 1
 2: while(v>0) print(v); v = v - 1
@@ -263,7 +263,7 @@ HEAP: Empty
 
 -------------------------------------
 ProgramState: 
-ID: 5
+ID: 12
 STACK: 
 1: while(v>0) print(v); v = v - 1
 2: print(v)
@@ -281,7 +281,7 @@ HEAP: Empty
 
 -------------------------------------
 ProgramState: 
-ID: 5
+ID: 12
 STACK: 
 1: print(v); v = v - 1
 2: while(v>0) print(v); v = v - 1
@@ -300,7 +300,7 @@ HEAP: Empty
 
 -------------------------------------
 ProgramState: 
-ID: 5
+ID: 12
 STACK: 
 1: print(v)
 2: v = v - 1
@@ -320,7 +320,7 @@ HEAP: Empty
 
 -------------------------------------
 ProgramState: 
-ID: 5
+ID: 12
 STACK: 
 1: v = v - 1
 2: while(v>0) print(v); v = v - 1
@@ -340,7 +340,7 @@ HEAP: Empty
 
 -------------------------------------
 ProgramState: 
-ID: 5
+ID: 12
 STACK: 
 1: while(v>0) print(v); v = v - 1
 2: print(v)
@@ -359,7 +359,7 @@ HEAP: Empty
 
 -------------------------------------
 ProgramState: 
-ID: 5
+ID: 12
 STACK: 
 1: print(v)
 
@@ -377,7 +377,7 @@ HEAP: Empty
 
 -------------------------------------
 ProgramState: 
-ID: 5
+ID: 12
 STACK: 
 
 TABLE: v -> 0

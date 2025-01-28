@@ -1,5 +1,5 @@
 ProgramState: 
-ID: 2
+ID: 4
 STACK: 
 1: Int a
 2: a = 10 / 0; print(a)
@@ -13,7 +13,7 @@ HEAP: Empty
 
 -------------------------------------
 ProgramState: 
-ID: 2
+ID: 4
 STACK: 
 1: a = 10 / 0; print(a)
 
@@ -27,7 +27,7 @@ HEAP: Empty
 
 -------------------------------------
 ProgramState: 
-ID: 2
+ID: 4
 STACK: 
 1: a = 10 / 0
 2: print(a)

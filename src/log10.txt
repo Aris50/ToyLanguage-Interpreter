@@ -1,5 +1,5 @@
 ProgramState: 
-ID: 4
+ID: 11
 STACK: 
 1: Ref(Int) v
 2: new(v, 20); Ref(Ref(Int)) a; new(a, v); new(v, 30); print(rH(rH(a)))
@@ -13,7 +13,7 @@ HEAP: Empty
 
 -------------------------------------
 ProgramState: 
-ID: 4
+ID: 11
 STACK: 
 1: new(v, 20); Ref(Ref(Int)) a; new(a, v); new(v, 30); print(rH(rH(a)))
 
@@ -27,7 +27,7 @@ HEAP: Empty
 
 -------------------------------------
 ProgramState: 
-ID: 4
+ID: 11
 STACK: 
 1: new(v, 20)
 2: Ref(Ref(Int)) a; new(a, v); new(v, 30); print(rH(rH(a)))
@@ -42,7 +42,7 @@ HEAP: Empty
 
 -------------------------------------
 ProgramState: 
-ID: 4
+ID: 11
 STACK: 
 1: Ref(Ref(Int)) a; new(a, v); new(v, 30); print(rH(rH(a)))
 
@@ -56,7 +56,7 @@ HEAP: 1 -> 20
 
 -------------------------------------
 ProgramState: 
-ID: 4
+ID: 11
 STACK: 
 1: Ref(Ref(Int)) a
 2: new(a, v); new(v, 30); print(rH(rH(a)))
@@ -71,7 +71,7 @@ HEAP: 1 -> 20
 
 -------------------------------------
 ProgramState: 
-ID: 4
+ID: 11
 STACK: 
 1: new(a, v); new(v, 30); print(rH(rH(a)))
 
@@ -86,7 +86,7 @@ HEAP: 1 -> 20
 
 -------------------------------------
 ProgramState: 
-ID: 4
+ID: 11
 STACK: 
 1: new(a, v)
 2: new(v, 30); print(rH(rH(a)))
@@ -102,7 +102,7 @@ HEAP: 1 -> 20
 
 -------------------------------------
 ProgramState: 
-ID: 4
+ID: 11
 STACK: 
 1: new(v, 30); print(rH(rH(a)))
 
@@ -118,7 +118,7 @@ HEAP: 1 -> 20
 
 -------------------------------------
 ProgramState: 
-ID: 4
+ID: 11
 STACK: 
 1: new(v, 30)
 2: print(rH(rH(a)))
@@ -135,7 +135,7 @@ HEAP: 1 -> 20
 
 -------------------------------------
 ProgramState: 
-ID: 4
+ID: 11
 STACK: 
 1: print(rH(rH(a)))
 
@@ -152,17 +152,19 @@ HEAP: 1 -> 20
 
 -------------------------------------
 ProgramState: 
-ID: 4
+ID: 11
 STACK: 
 
 TABLE: a -> (2, Ref(Int))
 v -> (3, Int)
 
-OUTPUT: 
+OUTPUT: 20
+
 -------------------------------------
 FILE TABLE: 
 -------------------------------------
-HEAP: 2 -> (1, Int)
+HEAP: 1 -> 20
+2 -> (1, Int)
 3 -> 30
 
 -------------------------------------

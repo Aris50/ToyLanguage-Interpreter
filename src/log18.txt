@@ -1,8 +1,8 @@
 ProgramState: 
-ID: 1
+ID: 0
 STACK: 
-1: Int a
-2: Int b; a = 2 + 3 * 5; b = a + 1; print(b)
+1: Ref(Int) a
+2: Ref(Int) b§ Int v§ new(a, 0)§ new(b, 0)§ wH(a, 1)§ wH(b, 2)§ v=(rH(a)<rH(b))?100:200§ print(v)§ v=(rH(b) - 2>rH(a))?100:200§ print(v)
 
 TABLE: 
 OUTPUT: 
@@ -13,11 +13,11 @@ HEAP: Empty
 
 -------------------------------------
 ProgramState: 
-ID: 1
+ID: 0
 STACK: 
-1: Int b; a = 2 + 3 * 5; b = a + 1; print(b)
+1: Ref(Int) b§ Int v§ new(a, 0)§ new(b, 0)§ wH(a, 1)§ wH(b, 2)§ v=(rH(a)<rH(b))?100:200§ print(v)§ v=(rH(b) - 2>rH(a))?100:200§ print(v)
 
-TABLE: a -> 0
+TABLE: a -> (0, Int)
 
 OUTPUT: 
 -------------------------------------
@@ -27,12 +27,12 @@ HEAP: Empty
 
 -------------------------------------
 ProgramState: 
-ID: 1
+ID: 0
 STACK: 
-1: Int b
-2: a = 2 + 3 * 5; b = a + 1; print(b)
+1: Ref(Int) b
+2: Int v§ new(a, 0)§ new(b, 0)§ wH(a, 1)§ wH(b, 2)§ v=(rH(a)<rH(b))?100:200§ print(v)§ v=(rH(b) - 2>rH(a))?100:200§ print(v)
 
-TABLE: a -> 0
+TABLE: a -> (0, Int)
 
 OUTPUT: 
 -------------------------------------
@@ -42,12 +42,12 @@ HEAP: Empty
 
 -------------------------------------
 ProgramState: 
-ID: 1
+ID: 0
 STACK: 
-1: a = 2 + 3 * 5; b = a + 1; print(b)
+1: Int v§ new(a, 0)§ new(b, 0)§ wH(a, 1)§ wH(b, 2)§ v=(rH(a)<rH(b))?100:200§ print(v)§ v=(rH(b) - 2>rH(a))?100:200§ print(v)
 
-TABLE: a -> 0
-b -> 0
+TABLE: a -> (0, Int)
+b -> (0, Int)
 
 OUTPUT: 
 -------------------------------------
@@ -57,13 +57,13 @@ HEAP: Empty
 
 -------------------------------------
 ProgramState: 
-ID: 1
+ID: 0
 STACK: 
-1: a = 2 + 3 * 5
-2: b = a + 1; print(b)
+1: Int v
+2: new(a, 0)§ new(b, 0)§ wH(a, 1)§ wH(b, 2)§ v=(rH(a)<rH(b))?100:200§ print(v)§ v=(rH(b) - 2>rH(a))?100:200§ print(v)
 
-TABLE: a -> 0
-b -> 0
+TABLE: a -> (0, Int)
+b -> (0, Int)
 
 OUTPUT: 
 -------------------------------------
@@ -73,60 +73,15 @@ HEAP: Empty
 
 -------------------------------------
 ProgramState: 
-ID: 1
+ID: 0
 STACK: 
-1: b = a + 1; print(b)
+1: new(a, 0)§ new(b, 0)§ wH(a, 1)§ wH(b, 2)§ v=(rH(a)<rH(b))?100:200§ print(v)§ v=(rH(b) - 2>rH(a))?100:200§ print(v)
 
-TABLE: a -> 17
-b -> 0
+TABLE: a -> (0, Int)
+b -> (0, Int)
+v -> 0
 
 OUTPUT: 
--------------------------------------
-FILE TABLE: 
--------------------------------------
-HEAP: Empty
-
--------------------------------------
-ProgramState: 
-ID: 1
-STACK: 
-1: b = a + 1
-2: print(b)
-
-TABLE: a -> 17
-b -> 0
-
-OUTPUT: 
--------------------------------------
-FILE TABLE: 
--------------------------------------
-HEAP: Empty
-
--------------------------------------
-ProgramState: 
-ID: 1
-STACK: 
-1: print(b)
-
-TABLE: a -> 17
-b -> 18
-
-OUTPUT: 
--------------------------------------
-FILE TABLE: 
--------------------------------------
-HEAP: Empty
-
--------------------------------------
-ProgramState: 
-ID: 1
-STACK: 
-
-TABLE: a -> 17
-b -> 18
-
-OUTPUT: 18
-
 -------------------------------------
 FILE TABLE: 
 -------------------------------------

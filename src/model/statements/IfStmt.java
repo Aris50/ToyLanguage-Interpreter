@@ -31,10 +31,10 @@ public class IfStmt implements IStmt {
         IValue expVal = this.exp.evaluate(state.getSymTable(), state.getHeap());
         /*
         if (!(expVal.getType() instanceof BoolType)) {
-            throw new statementException(expVal.toString() + " is not a boolean");
+            throw new StatementException(expVal.toString() + " is not a boolean");
         }
         */
-        if (((BoolValue) expVal).getValue()) {
+        if (((BoolValue) expVal).getValue()){
             state.getExeStack().push(thenS);
         } else {
             state.getExeStack().push(elseS);

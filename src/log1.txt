@@ -1,5 +1,5 @@
 ProgramState: 
-ID: 2
+ID: 0
 STACK: 
 1: Int v
 2: v = 2; print(v)
@@ -13,7 +13,7 @@ HEAP: Empty
 
 -------------------------------------
 ProgramState: 
-ID: 2
+ID: 0
 STACK: 
 1: v = 2; print(v)
 
@@ -27,7 +27,7 @@ HEAP: Empty
 
 -------------------------------------
 ProgramState: 
-ID: 2
+ID: 0
 STACK: 
 1: v = 2
 2: print(v)
@@ -42,7 +42,7 @@ HEAP: Empty
 
 -------------------------------------
 ProgramState: 
-ID: 2
+ID: 0
 STACK: 
 1: print(v)
 
@@ -56,7 +56,7 @@ HEAP: Empty
 
 -------------------------------------
 ProgramState: 
-ID: 2
+ID: 0
 STACK: 
 
 TABLE: v -> 2

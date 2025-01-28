@@ -1,0 +1,789 @@
+ProgramState: 
+ID: 0
+STACK: 
+1: Int v
+2: Int x; Int y; v = 0; ( repeat (fork(print(v); v = v - 1); v = v + 1) until (v==3)); x = 1; nop; y = 3; nop; print(v * 10)
+
+TABLE: 
+OUTPUT: 
+-------------------------------------
+FILE TABLE: 
+-------------------------------------
+HEAP: Empty
+
+-------------------------------------
+ProgramState: 
+ID: 0
+STACK: 
+1: Int x; Int y; v = 0; ( repeat (fork(print(v); v = v - 1); v = v + 1) until (v==3)); x = 1; nop; y = 3; nop; print(v * 10)
+
+TABLE: v -> 0
+
+OUTPUT: 
+-------------------------------------
+FILE TABLE: 
+-------------------------------------
+HEAP: Empty
+
+-------------------------------------
+ProgramState: 
+ID: 0
+STACK: 
+1: Int x
+2: Int y; v = 0; ( repeat (fork(print(v); v = v - 1); v = v + 1) until (v==3)); x = 1; nop; y = 3; nop; print(v * 10)
+
+TABLE: v -> 0
+
+OUTPUT: 
+-------------------------------------
+FILE TABLE: 
+-------------------------------------
+HEAP: Empty
+
+-------------------------------------
+ProgramState: 
+ID: 0
+STACK: 
+1: Int y; v = 0; ( repeat (fork(print(v); v = v - 1); v = v + 1) until (v==3)); x = 1; nop; y = 3; nop; print(v * 10)
+
+TABLE: v -> 0
+x -> 0
+
+OUTPUT: 
+-------------------------------------
+FILE TABLE: 
+-------------------------------------
+HEAP: Empty
+
+-------------------------------------
+ProgramState: 
+ID: 0
+STACK: 
+1: Int y
+2: v = 0; ( repeat (fork(print(v); v = v - 1); v = v + 1) until (v==3)); x = 1; nop; y = 3; nop; print(v * 10)
+
+TABLE: v -> 0
+x -> 0
+
+OUTPUT: 
+-------------------------------------
+FILE TABLE: 
+-------------------------------------
+HEAP: Empty
+
+-------------------------------------
+ProgramState: 
+ID: 0
+STACK: 
+1: v = 0; ( repeat (fork(print(v); v = v - 1); v = v + 1) until (v==3)); x = 1; nop; y = 3; nop; print(v * 10)
+
+TABLE: v -> 0
+x -> 0
+y -> 0
+
+OUTPUT: 
+-------------------------------------
+FILE TABLE: 
+-------------------------------------
+HEAP: Empty
+
+-------------------------------------
+ProgramState: 
+ID: 0
+STACK: 
+1: v = 0
+2: ( repeat (fork(print(v); v = v - 1); v = v + 1) until (v==3)); x = 1; nop; y = 3; nop; print(v * 10)
+
+TABLE: v -> 0
+x -> 0
+y -> 0
+
+OUTPUT: 
+-------------------------------------
+FILE TABLE: 
+-------------------------------------
+HEAP: Empty
+
+-------------------------------------
+ProgramState: 
+ID: 0
+STACK: 
+1: ( repeat (fork(print(v); v = v - 1); v = v + 1) until (v==3)); x = 1; nop; y = 3; nop; print(v * 10)
+
+TABLE: v -> 0
+x -> 0
+y -> 0
+
+OUTPUT: 
+-------------------------------------
+FILE TABLE: 
+-------------------------------------
+HEAP: Empty
+
+-------------------------------------
+ProgramState: 
+ID: 0
+STACK: 
+1: ( repeat (fork(print(v); v = v - 1); v = v + 1) until (v==3))
+2: x = 1; nop; y = 3; nop; print(v * 10)
+
+TABLE: v -> 0
+x -> 0
+y -> 0
+
+OUTPUT: 
+-------------------------------------
+FILE TABLE: 
+-------------------------------------
+HEAP: Empty
+
+-------------------------------------
+ProgramState: 
+ID: 0
+STACK: 
+1: fork(print(v); v = v - 1); v = v + 1; while(!(v==3)) fork(print(v); v = v - 1); v = v + 1
+2: x = 1; nop; y = 3; nop; print(v * 10)
+
+TABLE: v -> 0
+x -> 0
+y -> 0
+
+OUTPUT: 
+-------------------------------------
+FILE TABLE: 
+-------------------------------------
+HEAP: Empty
+
+-------------------------------------
+ProgramState: 
+ID: 0
+STACK: 
+1: fork(print(v); v = v - 1); v = v + 1
+2: while(!(v==3)) fork(print(v); v = v - 1); v = v + 1
+3: x = 1; nop; y = 3; nop; print(v * 10)
+
+TABLE: v -> 0
+x -> 0
+y -> 0
+
+OUTPUT: 
+-------------------------------------
+FILE TABLE: 
+-------------------------------------
+HEAP: Empty
+
+-------------------------------------
+ProgramState: 
+ID: 0
+STACK: 
+1: fork(print(v); v = v - 1)
+2: v = v + 1
+3: while(!(v==3)) fork(print(v); v = v - 1); v = v + 1
+4: x = 1; nop; y = 3; nop; print(v * 10)
+
+TABLE: v -> 0
+x -> 0
+y -> 0
+
+OUTPUT: 
+-------------------------------------
+FILE TABLE: 
+-------------------------------------
+HEAP: Empty
+
+-------------------------------------
+ProgramState: 
+ID: 0
+STACK: 
+1: v = v + 1
+2: while(!(v==3)) fork(print(v); v = v - 1); v = v + 1
+3: x = 1; nop; y = 3; nop; print(v * 10)
+
+TABLE: v -> 0
+x -> 0
+y -> 0
+
+OUTPUT: 
+-------------------------------------
+FILE TABLE: 
+-------------------------------------
+HEAP: Empty
+
+-------------------------------------
+ProgramState: 
+ID: 1
+STACK: 
+1: print(v); v = v - 1
+
+TABLE: v -> 0
+x -> 0
+y -> 0
+
+OUTPUT: 
+-------------------------------------
+FILE TABLE: 
+-------------------------------------
+HEAP: Empty
+
+-------------------------------------
+ProgramState: 
+ID: 0
+STACK: 
+1: while(!(v==3)) fork(print(v); v = v - 1); v = v + 1
+2: x = 1; nop; y = 3; nop; print(v * 10)
+
+TABLE: v -> 1
+x -> 0
+y -> 0
+
+OUTPUT: 
+-------------------------------------
+FILE TABLE: 
+-------------------------------------
+HEAP: Empty
+
+-------------------------------------
+ProgramState: 
+ID: 1
+STACK: 
+1: print(v)
+2: v = v - 1
+
+TABLE: v -> 0
+x -> 0
+y -> 0
+
+OUTPUT: 
+-------------------------------------
+FILE TABLE: 
+-------------------------------------
+HEAP: Empty
+
+-------------------------------------
+ProgramState: 
+ID: 0
+STACK: 
+1: fork(print(v); v = v - 1); v = v + 1
+2: while(!(v==3)) fork(print(v); v = v - 1); v = v + 1
+3: x = 1; nop; y = 3; nop; print(v * 10)
+
+TABLE: v -> 1
+x -> 0
+y -> 0
+
+OUTPUT: 0
+
+-------------------------------------
+FILE TABLE: 
+-------------------------------------
+HEAP: Empty
+
+-------------------------------------
+ProgramState: 
+ID: 1
+STACK: 
+1: v = v - 1
+
+TABLE: v -> 0
+x -> 0
+y -> 0
+
+OUTPUT: 0
+
+-------------------------------------
+FILE TABLE: 
+-------------------------------------
+HEAP: Empty
+
+-------------------------------------
+ProgramState: 
+ID: 0
+STACK: 
+1: fork(print(v); v = v - 1)
+2: v = v + 1
+3: while(!(v==3)) fork(print(v); v = v - 1); v = v + 1
+4: x = 1; nop; y = 3; nop; print(v * 10)
+
+TABLE: v -> 1
+x -> 0
+y -> 0
+
+OUTPUT: 0
+
+-------------------------------------
+FILE TABLE: 
+-------------------------------------
+HEAP: Empty
+
+-------------------------------------
+ProgramState: 
+ID: 1
+STACK: 
+
+TABLE: v -> -1
+x -> 0
+y -> 0
+
+OUTPUT: 0
+
+-------------------------------------
+FILE TABLE: 
+-------------------------------------
+HEAP: Empty
+
+-------------------------------------
+ProgramState: 
+ID: 0
+STACK: 
+1: v = v + 1
+2: while(!(v==3)) fork(print(v); v = v - 1); v = v + 1
+3: x = 1; nop; y = 3; nop; print(v * 10)
+
+TABLE: v -> 1
+x -> 0
+y -> 0
+
+OUTPUT: 0
+
+-------------------------------------
+FILE TABLE: 
+-------------------------------------
+HEAP: Empty
+
+-------------------------------------
+ProgramState: 
+ID: 2
+STACK: 
+1: print(v); v = v - 1
+
+TABLE: v -> 1
+x -> 0
+y -> 0
+
+OUTPUT: 0
+
+-------------------------------------
+FILE TABLE: 
+-------------------------------------
+HEAP: Empty
+
+-------------------------------------
+ProgramState: 
+ID: 0
+STACK: 
+1: while(!(v==3)) fork(print(v); v = v - 1); v = v + 1
+2: x = 1; nop; y = 3; nop; print(v * 10)
+
+TABLE: v -> 2
+x -> 0
+y -> 0
+
+OUTPUT: 0
+
+-------------------------------------
+FILE TABLE: 
+-------------------------------------
+HEAP: Empty
+
+-------------------------------------
+ProgramState: 
+ID: 2
+STACK: 
+1: print(v)
+2: v = v - 1
+
+TABLE: v -> 1
+x -> 0
+y -> 0
+
+OUTPUT: 0
+
+-------------------------------------
+FILE TABLE: 
+-------------------------------------
+HEAP: Empty
+
+-------------------------------------
+ProgramState: 
+ID: 0
+STACK: 
+1: fork(print(v); v = v - 1); v = v + 1
+2: while(!(v==3)) fork(print(v); v = v - 1); v = v + 1
+3: x = 1; nop; y = 3; nop; print(v * 10)
+
+TABLE: v -> 2
+x -> 0
+y -> 0
+
+OUTPUT: 0
+1
+
+-------------------------------------
+FILE TABLE: 
+-------------------------------------
+HEAP: Empty
+
+-------------------------------------
+ProgramState: 
+ID: 2
+STACK: 
+1: v = v - 1
+
+TABLE: v -> 1
+x -> 0
+y -> 0
+
+OUTPUT: 0
+1
+
+-------------------------------------
+FILE TABLE: 
+-------------------------------------
+HEAP: Empty
+
+-------------------------------------
+ProgramState: 
+ID: 0
+STACK: 
+1: fork(print(v); v = v - 1)
+2: v = v + 1
+3: while(!(v==3)) fork(print(v); v = v - 1); v = v + 1
+4: x = 1; nop; y = 3; nop; print(v * 10)
+
+TABLE: v -> 2
+x -> 0
+y -> 0
+
+OUTPUT: 0
+1
+
+-------------------------------------
+FILE TABLE: 
+-------------------------------------
+HEAP: Empty
+
+-------------------------------------
+ProgramState: 
+ID: 2
+STACK: 
+
+TABLE: v -> 0
+x -> 0
+y -> 0
+
+OUTPUT: 0
+1
+
+-------------------------------------
+FILE TABLE: 
+-------------------------------------
+HEAP: Empty
+
+-------------------------------------
+ProgramState: 
+ID: 0
+STACK: 
+1: v = v + 1
+2: while(!(v==3)) fork(print(v); v = v - 1); v = v + 1
+3: x = 1; nop; y = 3; nop; print(v * 10)
+
+TABLE: v -> 2
+x -> 0
+y -> 0
+
+OUTPUT: 0
+1
+
+-------------------------------------
+FILE TABLE: 
+-------------------------------------
+HEAP: Empty
+
+-------------------------------------
+ProgramState: 
+ID: 3
+STACK: 
+1: print(v); v = v - 1
+
+TABLE: v -> 2
+x -> 0
+y -> 0
+
+OUTPUT: 0
+1
+
+-------------------------------------
+FILE TABLE: 
+-------------------------------------
+HEAP: Empty
+
+-------------------------------------
+ProgramState: 
+ID: 0
+STACK: 
+1: while(!(v==3)) fork(print(v); v = v - 1); v = v + 1
+2: x = 1; nop; y = 3; nop; print(v * 10)
+
+TABLE: v -> 3
+x -> 0
+y -> 0
+
+OUTPUT: 0
+1
+
+-------------------------------------
+FILE TABLE: 
+-------------------------------------
+HEAP: Empty
+
+-------------------------------------
+ProgramState: 
+ID: 3
+STACK: 
+1: print(v)
+2: v = v - 1
+
+TABLE: v -> 2
+x -> 0
+y -> 0
+
+OUTPUT: 0
+1
+
+-------------------------------------
+FILE TABLE: 
+-------------------------------------
+HEAP: Empty
+
+-------------------------------------
+ProgramState: 
+ID: 0
+STACK: 
+1: x = 1; nop; y = 3; nop; print(v * 10)
+
+TABLE: v -> 3
+x -> 0
+y -> 0
+
+OUTPUT: 0
+1
+2
+
+-------------------------------------
+FILE TABLE: 
+-------------------------------------
+HEAP: Empty
+
+-------------------------------------
+ProgramState: 
+ID: 3
+STACK: 
+1: v = v - 1
+
+TABLE: v -> 2
+x -> 0
+y -> 0
+
+OUTPUT: 0
+1
+2
+
+-------------------------------------
+FILE TABLE: 
+-------------------------------------
+HEAP: Empty
+
+-------------------------------------
+ProgramState: 
+ID: 0
+STACK: 
+1: x = 1
+2: nop; y = 3; nop; print(v * 10)
+
+TABLE: v -> 3
+x -> 0
+y -> 0
+
+OUTPUT: 0
+1
+2
+
+-------------------------------------
+FILE TABLE: 
+-------------------------------------
+HEAP: Empty
+
+-------------------------------------
+ProgramState: 
+ID: 3
+STACK: 
+
+TABLE: v -> 1
+x -> 0
+y -> 0
+
+OUTPUT: 0
+1
+2
+
+-------------------------------------
+FILE TABLE: 
+-------------------------------------
+HEAP: Empty
+
+-------------------------------------
+ProgramState: 
+ID: 0
+STACK: 
+1: nop; y = 3; nop; print(v * 10)
+
+TABLE: v -> 3
+x -> 1
+y -> 0
+
+OUTPUT: 0
+1
+2
+
+-------------------------------------
+FILE TABLE: 
+-------------------------------------
+HEAP: Empty
+
+-------------------------------------
+ProgramState: 
+ID: 0
+STACK: 
+1: nop
+2: y = 3; nop; print(v * 10)
+
+TABLE: v -> 3
+x -> 1
+y -> 0
+
+OUTPUT: 0
+1
+2
+
+-------------------------------------
+FILE TABLE: 
+-------------------------------------
+HEAP: Empty
+
+-------------------------------------
+ProgramState: 
+ID: 0
+STACK: 
+1: y = 3; nop; print(v * 10)
+
+TABLE: v -> 3
+x -> 1
+y -> 0
+
+OUTPUT: 0
+1
+2
+
+-------------------------------------
+FILE TABLE: 
+-------------------------------------
+HEAP: Empty
+
+-------------------------------------
+ProgramState: 
+ID: 0
+STACK: 
+1: y = 3
+2: nop; print(v * 10)
+
+TABLE: v -> 3
+x -> 1
+y -> 0
+
+OUTPUT: 0
+1
+2
+
+-------------------------------------
+FILE TABLE: 
+-------------------------------------
+HEAP: Empty
+
+-------------------------------------
+ProgramState: 
+ID: 0
+STACK: 
+1: nop; print(v * 10)
+
+TABLE: v -> 3
+x -> 1
+y -> 3
+
+OUTPUT: 0
+1
+2
+
+-------------------------------------
+FILE TABLE: 
+-------------------------------------
+HEAP: Empty
+
+-------------------------------------
+ProgramState: 
+ID: 0
+STACK: 
+1: nop
+2: print(v * 10)
+
+TABLE: v -> 3
+x -> 1
+y -> 3
+
+OUTPUT: 0
+1
+2
+
+-------------------------------------
+FILE TABLE: 
+-------------------------------------
+HEAP: Empty
+
+-------------------------------------
+ProgramState: 
+ID: 0
+STACK: 
+1: print(v * 10)
+
+TABLE: v -> 3
+x -> 1
+y -> 3
+
+OUTPUT: 0
+1
+2
+
+-------------------------------------
+FILE TABLE: 
+-------------------------------------
+HEAP: Empty
+
+-------------------------------------
+ProgramState: 
+ID: 0
+STACK: 
+
+TABLE: v -> 3
+x -> 1
+y -> 3
+
+OUTPUT: 0
+1
+2
+30
+
+-------------------------------------
+FILE TABLE: 
+-------------------------------------
+HEAP: Empty
+
+-------------------------------------

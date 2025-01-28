@@ -1,5 +1,5 @@
 ProgramState: 
-ID: 2
+ID: 3
 STACK: 
 1: Boolean a
 2: Int v; a = true; IF(a) THEN {v = 2}ELSE {v = 3}; print(v)
@@ -9,13 +9,11 @@ OUTPUT:
 -------------------------------------
 FILE TABLE: 
 -------------------------------------
-HEAP: Heap:
-Empty
+HEAP: Empty
 
 -------------------------------------
-
 ProgramState: 
-ID: 2
+ID: 3
 STACK: 
 1: Int v; a = true; IF(a) THEN {v = 2}ELSE {v = 3}; print(v)
 
@@ -25,13 +23,11 @@ OUTPUT:
 -------------------------------------
 FILE TABLE: 
 -------------------------------------
-HEAP: Heap:
-Empty
+HEAP: Empty
 
 -------------------------------------
-
 ProgramState: 
-ID: 2
+ID: 3
 STACK: 
 1: Int v
 2: a = true; IF(a) THEN {v = 2}ELSE {v = 3}; print(v)
@@ -42,13 +38,11 @@ OUTPUT:
 -------------------------------------
 FILE TABLE: 
 -------------------------------------
-HEAP: Heap:
-Empty
+HEAP: Empty
 
 -------------------------------------
-
 ProgramState: 
-ID: 2
+ID: 3
 STACK: 
 1: a = true; IF(a) THEN {v = 2}ELSE {v = 3}; print(v)
 
@@ -59,13 +53,11 @@ OUTPUT:
 -------------------------------------
 FILE TABLE: 
 -------------------------------------
-HEAP: Heap:
-Empty
+HEAP: Empty
 
 -------------------------------------
-
 ProgramState: 
-ID: 2
+ID: 3
 STACK: 
 1: a = true
 2: IF(a) THEN {v = 2}ELSE {v = 3}; print(v)
@@ -77,13 +69,11 @@ OUTPUT:
 -------------------------------------
 FILE TABLE: 
 -------------------------------------
-HEAP: Heap:
-Empty
+HEAP: Empty
 
 -------------------------------------
-
 ProgramState: 
-ID: 2
+ID: 3
 STACK: 
 1: IF(a) THEN {v = 2}ELSE {v = 3}; print(v)
 
@@ -94,13 +84,11 @@ OUTPUT:
 -------------------------------------
 FILE TABLE: 
 -------------------------------------
-HEAP: Heap:
-Empty
+HEAP: Empty
 
 -------------------------------------
-
 ProgramState: 
-ID: 2
+ID: 3
 STACK: 
 1: IF(a) THEN {v = 2}ELSE {v = 3}
 2: print(v)
@@ -112,13 +100,11 @@ OUTPUT:
 -------------------------------------
 FILE TABLE: 
 -------------------------------------
-HEAP: Heap:
-Empty
+HEAP: Empty
 
 -------------------------------------
-
 ProgramState: 
-ID: 2
+ID: 3
 STACK: 
 1: v = 2
 2: print(v)
@@ -130,13 +116,11 @@ OUTPUT:
 -------------------------------------
 FILE TABLE: 
 -------------------------------------
-HEAP: Heap:
-Empty
+HEAP: Empty
 
 -------------------------------------
-
 ProgramState: 
-ID: 2
+ID: 3
 STACK: 
 1: print(v)
 
@@ -147,13 +131,11 @@ OUTPUT:
 -------------------------------------
 FILE TABLE: 
 -------------------------------------
-HEAP: Heap:
-Empty
+HEAP: Empty
 
 -------------------------------------
-
 ProgramState: 
-ID: 2
+ID: 3
 STACK: 
 
 TABLE: a -> true
@@ -164,8 +146,6 @@ OUTPUT: 2
 -------------------------------------
 FILE TABLE: 
 -------------------------------------
-HEAP: Heap:
-Empty
+HEAP: Empty
 
 -------------------------------------
-

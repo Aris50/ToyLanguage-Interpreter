@@ -1,8 +1,8 @@
 ProgramState: 
-ID: 13
+ID: 0
 STACK: 
-1: Int v
-2: Ref(Int) a; v = 10; new(a, 22); fork(wH(a, 30); v = 32; print(v); print(rH(a))); print(v); print(rH(a))
+1: Boolean b
+2: Int c; b = true; c=(b)?100:200; print(c); c=(false)?100:200; print(c)
 
 TABLE: 
 OUTPUT: 
@@ -13,11 +13,11 @@ HEAP: Empty
 
 -------------------------------------
 ProgramState: 
-ID: 13
+ID: 0
 STACK: 
-1: Ref(Int) a; v = 10; new(a, 22); fork(wH(a, 30); v = 32; print(v); print(rH(a))); print(v); print(rH(a))
+1: Int c; b = true; c=(b)?100:200; print(c); c=(false)?100:200; print(c)
 
-TABLE: v -> 0
+TABLE: b -> false
 
 OUTPUT: 
 -------------------------------------
@@ -27,12 +27,12 @@ HEAP: Empty
 
 -------------------------------------
 ProgramState: 
-ID: 13
+ID: 0
 STACK: 
-1: Ref(Int) a
-2: v = 10; new(a, 22); fork(wH(a, 30); v = 32; print(v); print(rH(a))); print(v); print(rH(a))
+1: Int c
+2: b = true; c=(b)?100:200; print(c); c=(false)?100:200; print(c)
 
-TABLE: v -> 0
+TABLE: b -> false
 
 OUTPUT: 
 -------------------------------------
@@ -42,12 +42,12 @@ HEAP: Empty
 
 -------------------------------------
 ProgramState: 
-ID: 13
+ID: 0
 STACK: 
-1: v = 10; new(a, 22); fork(wH(a, 30); v = 32; print(v); print(rH(a))); print(v); print(rH(a))
+1: b = true; c=(b)?100:200; print(c); c=(false)?100:200; print(c)
 
-TABLE: a -> (0, Int)
-v -> 0
+TABLE: b -> false
+c -> 0
 
 OUTPUT: 
 -------------------------------------
@@ -57,13 +57,13 @@ HEAP: Empty
 
 -------------------------------------
 ProgramState: 
-ID: 13
+ID: 0
 STACK: 
-1: v = 10
-2: new(a, 22); fork(wH(a, 30); v = 32; print(v); print(rH(a))); print(v); print(rH(a))
+1: b = true
+2: c=(b)?100:200; print(c); c=(false)?100:200; print(c)
 
-TABLE: a -> (0, Int)
-v -> 0
+TABLE: b -> false
+c -> 0
 
 OUTPUT: 
 -------------------------------------
@@ -73,12 +73,12 @@ HEAP: Empty
 
 -------------------------------------
 ProgramState: 
-ID: 13
+ID: 0
 STACK: 
-1: new(a, 22); fork(wH(a, 30); v = 32; print(v); print(rH(a))); print(v); print(rH(a))
+1: c=(b)?100:200; print(c); c=(false)?100:200; print(c)
 
-TABLE: a -> (0, Int)
-v -> 10
+TABLE: b -> true
+c -> 0
 
 OUTPUT: 
 -------------------------------------
@@ -88,13 +88,13 @@ HEAP: Empty
 
 -------------------------------------
 ProgramState: 
-ID: 13
+ID: 0
 STACK: 
-1: new(a, 22)
-2: fork(wH(a, 30); v = 32; print(v); print(rH(a))); print(v); print(rH(a))
+1: c=(b)?100:200
+2: print(c); c=(false)?100:200; print(c)
 
-TABLE: a -> (0, Int)
-v -> 10
+TABLE: b -> true
+c -> 0
 
 OUTPUT: 
 -------------------------------------
@@ -104,232 +104,164 @@ HEAP: Empty
 
 -------------------------------------
 ProgramState: 
-ID: 13
+ID: 0
 STACK: 
-1: fork(wH(a, 30); v = 32; print(v); print(rH(a))); print(v); print(rH(a))
+1: IF(b) THEN {c = 100}ELSE {c = 200}
+2: print(c); c=(false)?100:200; print(c)
 
-TABLE: a -> (1, Int)
-v -> 10
+TABLE: b -> true
+c -> 0
 
 OUTPUT: 
 -------------------------------------
 FILE TABLE: 
 -------------------------------------
-HEAP: 1 -> 22
+HEAP: Empty
 
 -------------------------------------
 ProgramState: 
-ID: 13
+ID: 0
 STACK: 
-1: fork(wH(a, 30); v = 32; print(v); print(rH(a)))
-2: print(v); print(rH(a))
+1: c = 100
+2: print(c); c=(false)?100:200; print(c)
 
-TABLE: a -> (1, Int)
-v -> 10
+TABLE: b -> true
+c -> 0
 
 OUTPUT: 
 -------------------------------------
 FILE TABLE: 
 -------------------------------------
-HEAP: 1 -> 22
+HEAP: Empty
 
 -------------------------------------
 ProgramState: 
-ID: 13
+ID: 0
 STACK: 
-1: print(v); print(rH(a))
+1: print(c); c=(false)?100:200; print(c)
 
-TABLE: a -> (1, Int)
-v -> 10
+TABLE: b -> true
+c -> 100
 
 OUTPUT: 
 -------------------------------------
 FILE TABLE: 
 -------------------------------------
-HEAP: 1 -> 22
+HEAP: Empty
 
 -------------------------------------
 ProgramState: 
-ID: 14
+ID: 0
 STACK: 
-1: wH(a, 30); v = 32; print(v); print(rH(a))
+1: print(c)
+2: c=(false)?100:200; print(c)
 
-TABLE: a -> (1, Int)
-v -> 10
+TABLE: b -> true
+c -> 100
 
 OUTPUT: 
 -------------------------------------
 FILE TABLE: 
 -------------------------------------
-HEAP: 1 -> 22
+HEAP: Empty
 
 -------------------------------------
 ProgramState: 
-ID: 13
+ID: 0
 STACK: 
-1: print(v)
-2: print(rH(a))
+1: c=(false)?100:200; print(c)
 
-TABLE: a -> (1, Int)
-v -> 10
+TABLE: b -> true
+c -> 100
 
-OUTPUT: 
--------------------------------------
-FILE TABLE: 
--------------------------------------
-HEAP: 1 -> 22
-
--------------------------------------
-ProgramState: 
-ID: 14
-STACK: 
-1: wH(a, 30)
-2: v = 32; print(v); print(rH(a))
-
-TABLE: a -> (1, Int)
-v -> 10
-
-OUTPUT: 
--------------------------------------
-FILE TABLE: 
--------------------------------------
-HEAP: 1 -> 22
-
--------------------------------------
-ProgramState: 
-ID: 13
-STACK: 
-1: print(rH(a))
-
-TABLE: a -> (1, Int)
-v -> 10
-
-OUTPUT: 10
+OUTPUT: 100
 
 -------------------------------------
 FILE TABLE: 
 -------------------------------------
-HEAP: 1 -> 30
+HEAP: Empty
 
 -------------------------------------
 ProgramState: 
-ID: 14
+ID: 0
 STACK: 
-1: v = 32; print(v); print(rH(a))
+1: c=(false)?100:200
+2: print(c)
 
-TABLE: a -> (1, Int)
-v -> 10
+TABLE: b -> true
+c -> 100
 
-OUTPUT: 10
+OUTPUT: 100
 
 -------------------------------------
 FILE TABLE: 
 -------------------------------------
-HEAP: 1 -> 30
+HEAP: Empty
 
 -------------------------------------
 ProgramState: 
-ID: 13
+ID: 0
 STACK: 
+1: IF(false) THEN {c = 100}ELSE {c = 200}
+2: print(c)
 
-TABLE: a -> (1, Int)
-v -> 10
+TABLE: b -> true
+c -> 100
 
-OUTPUT: 10
-30
+OUTPUT: 100
 
 -------------------------------------
 FILE TABLE: 
 -------------------------------------
-HEAP: 1 -> 30
+HEAP: Empty
 
 -------------------------------------
 ProgramState: 
-ID: 14
+ID: 0
 STACK: 
-1: v = 32
-2: print(v); print(rH(a))
+1: c = 200
+2: print(c)
 
-TABLE: a -> (1, Int)
-v -> 10
+TABLE: b -> true
+c -> 100
 
-OUTPUT: 10
-30
+OUTPUT: 100
 
 -------------------------------------
 FILE TABLE: 
 -------------------------------------
-HEAP: 1 -> 30
+HEAP: Empty
 
 -------------------------------------
 ProgramState: 
-ID: 14
+ID: 0
 STACK: 
-1: print(v); print(rH(a))
+1: print(c)
 
-TABLE: a -> (1, Int)
-v -> 32
+TABLE: b -> true
+c -> 200
 
-OUTPUT: 10
-30
+OUTPUT: 100
 
 -------------------------------------
 FILE TABLE: 
 -------------------------------------
-HEAP: 1 -> 30
+HEAP: Empty
 
 -------------------------------------
 ProgramState: 
-ID: 14
+ID: 0
 STACK: 
-1: print(v)
-2: print(rH(a))
 
-TABLE: a -> (1, Int)
-v -> 32
+TABLE: b -> true
+c -> 200
 
-OUTPUT: 10
-30
+OUTPUT: 100
+200
 
 -------------------------------------
 FILE TABLE: 
 -------------------------------------
-HEAP: 1 -> 30
-
--------------------------------------
-ProgramState: 
-ID: 14
-STACK: 
-1: print(rH(a))
-
-TABLE: a -> (1, Int)
-v -> 32
-
-OUTPUT: 10
-30
-32
-
--------------------------------------
-FILE TABLE: 
--------------------------------------
-HEAP: 1 -> 30
-
--------------------------------------
-ProgramState: 
-ID: 14
-STACK: 
-
-TABLE: a -> (1, Int)
-v -> 32
-
-OUTPUT: 10
-30
-32
-30
-
--------------------------------------
-FILE TABLE: 
--------------------------------------
-HEAP: 1 -> 30
+HEAP: Empty
 
 -------------------------------------
