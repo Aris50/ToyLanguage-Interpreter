@@ -1,5 +1,5 @@
 ProgramState: 
-ID: 0
+ID: 9
 STACK: 
 1: Int v
 2: Int x; Int y; v = 0; ( repeat (fork(print(v); v = v - 1); v = v + 1) until (v==3)); x = 1; nop; y = 3; nop; print(v * 10)
@@ -12,8 +12,10 @@ FILE TABLE:
 HEAP: Empty
 
 -------------------------------------
+BARRIER TABLE: model.adt.BarrierTable@21ada294
+-------------------------------------
 ProgramState: 
-ID: 0
+ID: 9
 STACK: 
 1: Int x; Int y; v = 0; ( repeat (fork(print(v); v = v - 1); v = v + 1) until (v==3)); x = 1; nop; y = 3; nop; print(v * 10)
 
@@ -26,8 +28,10 @@ FILE TABLE:
 HEAP: Empty
 
 -------------------------------------
+BARRIER TABLE: model.adt.BarrierTable@21ada294
+-------------------------------------
 ProgramState: 
-ID: 0
+ID: 9
 STACK: 
 1: Int x
 2: Int y; v = 0; ( repeat (fork(print(v); v = v - 1); v = v + 1) until (v==3)); x = 1; nop; y = 3; nop; print(v * 10)
@@ -41,8 +45,10 @@ FILE TABLE:
 HEAP: Empty
 
 -------------------------------------
+BARRIER TABLE: model.adt.BarrierTable@21ada294
+-------------------------------------
 ProgramState: 
-ID: 0
+ID: 9
 STACK: 
 1: Int y; v = 0; ( repeat (fork(print(v); v = v - 1); v = v + 1) until (v==3)); x = 1; nop; y = 3; nop; print(v * 10)
 
@@ -56,8 +62,10 @@ FILE TABLE:
 HEAP: Empty
 
 -------------------------------------
+BARRIER TABLE: model.adt.BarrierTable@21ada294
+-------------------------------------
 ProgramState: 
-ID: 0
+ID: 9
 STACK: 
 1: Int y
 2: v = 0; ( repeat (fork(print(v); v = v - 1); v = v + 1) until (v==3)); x = 1; nop; y = 3; nop; print(v * 10)
@@ -72,8 +80,10 @@ FILE TABLE:
 HEAP: Empty
 
 -------------------------------------
+BARRIER TABLE: model.adt.BarrierTable@21ada294
+-------------------------------------
 ProgramState: 
-ID: 0
+ID: 9
 STACK: 
 1: v = 0; ( repeat (fork(print(v); v = v - 1); v = v + 1) until (v==3)); x = 1; nop; y = 3; nop; print(v * 10)
 
@@ -88,8 +98,10 @@ FILE TABLE:
 HEAP: Empty
 
 -------------------------------------
+BARRIER TABLE: model.adt.BarrierTable@21ada294
+-------------------------------------
 ProgramState: 
-ID: 0
+ID: 9
 STACK: 
 1: v = 0
 2: ( repeat (fork(print(v); v = v - 1); v = v + 1) until (v==3)); x = 1; nop; y = 3; nop; print(v * 10)
@@ -105,8 +117,10 @@ FILE TABLE:
 HEAP: Empty
 
 -------------------------------------
+BARRIER TABLE: model.adt.BarrierTable@21ada294
+-------------------------------------
 ProgramState: 
-ID: 0
+ID: 9
 STACK: 
 1: ( repeat (fork(print(v); v = v - 1); v = v + 1) until (v==3)); x = 1; nop; y = 3; nop; print(v * 10)
 
@@ -121,8 +135,10 @@ FILE TABLE:
 HEAP: Empty
 
 -------------------------------------
+BARRIER TABLE: model.adt.BarrierTable@21ada294
+-------------------------------------
 ProgramState: 
-ID: 0
+ID: 9
 STACK: 
 1: ( repeat (fork(print(v); v = v - 1); v = v + 1) until (v==3))
 2: x = 1; nop; y = 3; nop; print(v * 10)
@@ -138,8 +154,10 @@ FILE TABLE:
 HEAP: Empty
 
 -------------------------------------
+BARRIER TABLE: model.adt.BarrierTable@21ada294
+-------------------------------------
 ProgramState: 
-ID: 0
+ID: 9
 STACK: 
 1: fork(print(v); v = v - 1); v = v + 1; while(!(v==3)) fork(print(v); v = v - 1); v = v + 1
 2: x = 1; nop; y = 3; nop; print(v * 10)
@@ -155,8 +173,10 @@ FILE TABLE:
 HEAP: Empty
 
 -------------------------------------
+BARRIER TABLE: model.adt.BarrierTable@21ada294
+-------------------------------------
 ProgramState: 
-ID: 0
+ID: 9
 STACK: 
 1: fork(print(v); v = v - 1); v = v + 1
 2: while(!(v==3)) fork(print(v); v = v - 1); v = v + 1
@@ -173,8 +193,10 @@ FILE TABLE:
 HEAP: Empty
 
 -------------------------------------
+BARRIER TABLE: model.adt.BarrierTable@21ada294
+-------------------------------------
 ProgramState: 
-ID: 0
+ID: 9
 STACK: 
 1: fork(print(v); v = v - 1)
 2: v = v + 1
@@ -192,8 +214,10 @@ FILE TABLE:
 HEAP: Empty
 
 -------------------------------------
+BARRIER TABLE: model.adt.BarrierTable@21ada294
+-------------------------------------
 ProgramState: 
-ID: 0
+ID: 9
 STACK: 
 1: v = v + 1
 2: while(!(v==3)) fork(print(v); v = v - 1); v = v + 1
@@ -210,8 +234,10 @@ FILE TABLE:
 HEAP: Empty
 
 -------------------------------------
+BARRIER TABLE: model.adt.BarrierTable@21ada294
+-------------------------------------
 ProgramState: 
-ID: 1
+ID: 10
 STACK: 
 1: print(v); v = v - 1
 
@@ -226,8 +252,10 @@ FILE TABLE:
 HEAP: Empty
 
 -------------------------------------
+BARRIER TABLE: model.adt.BarrierTable@21ada294
+-------------------------------------
 ProgramState: 
-ID: 0
+ID: 9
 STACK: 
 1: while(!(v==3)) fork(print(v); v = v - 1); v = v + 1
 2: x = 1; nop; y = 3; nop; print(v * 10)
@@ -243,8 +271,10 @@ FILE TABLE:
 HEAP: Empty
 
 -------------------------------------
+BARRIER TABLE: model.adt.BarrierTable@21ada294
+-------------------------------------
 ProgramState: 
-ID: 1
+ID: 10
 STACK: 
 1: print(v)
 2: v = v - 1
@@ -260,8 +290,10 @@ FILE TABLE:
 HEAP: Empty
 
 -------------------------------------
+BARRIER TABLE: model.adt.BarrierTable@21ada294
+-------------------------------------
 ProgramState: 
-ID: 0
+ID: 9
 STACK: 
 1: fork(print(v); v = v - 1); v = v + 1
 2: while(!(v==3)) fork(print(v); v = v - 1); v = v + 1
@@ -279,8 +311,10 @@ FILE TABLE:
 HEAP: Empty
 
 -------------------------------------
+BARRIER TABLE: model.adt.BarrierTable@21ada294
+-------------------------------------
 ProgramState: 
-ID: 1
+ID: 10
 STACK: 
 1: v = v - 1
 
@@ -296,8 +330,10 @@ FILE TABLE:
 HEAP: Empty
 
 -------------------------------------
+BARRIER TABLE: model.adt.BarrierTable@21ada294
+-------------------------------------
 ProgramState: 
-ID: 0
+ID: 9
 STACK: 
 1: fork(print(v); v = v - 1)
 2: v = v + 1
@@ -316,8 +352,10 @@ FILE TABLE:
 HEAP: Empty
 
 -------------------------------------
+BARRIER TABLE: model.adt.BarrierTable@21ada294
+-------------------------------------
 ProgramState: 
-ID: 1
+ID: 10
 STACK: 
 
 TABLE: v -> -1
@@ -332,8 +370,10 @@ FILE TABLE:
 HEAP: Empty
 
 -------------------------------------
+BARRIER TABLE: model.adt.BarrierTable@21ada294
+-------------------------------------
 ProgramState: 
-ID: 0
+ID: 9
 STACK: 
 1: v = v + 1
 2: while(!(v==3)) fork(print(v); v = v - 1); v = v + 1
@@ -351,8 +391,10 @@ FILE TABLE:
 HEAP: Empty
 
 -------------------------------------
+BARRIER TABLE: model.adt.BarrierTable@21ada294
+-------------------------------------
 ProgramState: 
-ID: 2
+ID: 11
 STACK: 
 1: print(v); v = v - 1
 
@@ -368,8 +410,10 @@ FILE TABLE:
 HEAP: Empty
 
 -------------------------------------
+BARRIER TABLE: model.adt.BarrierTable@21ada294
+-------------------------------------
 ProgramState: 
-ID: 0
+ID: 9
 STACK: 
 1: while(!(v==3)) fork(print(v); v = v - 1); v = v + 1
 2: x = 1; nop; y = 3; nop; print(v * 10)
@@ -386,8 +430,10 @@ FILE TABLE:
 HEAP: Empty
 
 -------------------------------------
+BARRIER TABLE: model.adt.BarrierTable@21ada294
+-------------------------------------
 ProgramState: 
-ID: 2
+ID: 11
 STACK: 
 1: print(v)
 2: v = v - 1
@@ -404,8 +450,10 @@ FILE TABLE:
 HEAP: Empty
 
 -------------------------------------
+BARRIER TABLE: model.adt.BarrierTable@21ada294
+-------------------------------------
 ProgramState: 
-ID: 0
+ID: 9
 STACK: 
 1: fork(print(v); v = v - 1); v = v + 1
 2: while(!(v==3)) fork(print(v); v = v - 1); v = v + 1
@@ -424,8 +472,10 @@ FILE TABLE:
 HEAP: Empty
 
 -------------------------------------
+BARRIER TABLE: model.adt.BarrierTable@21ada294
+-------------------------------------
 ProgramState: 
-ID: 2
+ID: 11
 STACK: 
 1: v = v - 1
 
@@ -442,8 +492,10 @@ FILE TABLE:
 HEAP: Empty
 
 -------------------------------------
+BARRIER TABLE: model.adt.BarrierTable@21ada294
+-------------------------------------
 ProgramState: 
-ID: 0
+ID: 9
 STACK: 
 1: fork(print(v); v = v - 1)
 2: v = v + 1
@@ -463,8 +515,10 @@ FILE TABLE:
 HEAP: Empty
 
 -------------------------------------
+BARRIER TABLE: model.adt.BarrierTable@21ada294
+-------------------------------------
 ProgramState: 
-ID: 2
+ID: 11
 STACK: 
 
 TABLE: v -> 0
@@ -480,8 +534,10 @@ FILE TABLE:
 HEAP: Empty
 
 -------------------------------------
+BARRIER TABLE: model.adt.BarrierTable@21ada294
+-------------------------------------
 ProgramState: 
-ID: 0
+ID: 9
 STACK: 
 1: v = v + 1
 2: while(!(v==3)) fork(print(v); v = v - 1); v = v + 1
@@ -500,8 +556,10 @@ FILE TABLE:
 HEAP: Empty
 
 -------------------------------------
+BARRIER TABLE: model.adt.BarrierTable@21ada294
+-------------------------------------
 ProgramState: 
-ID: 3
+ID: 12
 STACK: 
 1: print(v); v = v - 1
 
@@ -518,8 +576,10 @@ FILE TABLE:
 HEAP: Empty
 
 -------------------------------------
+BARRIER TABLE: model.adt.BarrierTable@21ada294
+-------------------------------------
 ProgramState: 
-ID: 0
+ID: 9
 STACK: 
 1: while(!(v==3)) fork(print(v); v = v - 1); v = v + 1
 2: x = 1; nop; y = 3; nop; print(v * 10)
@@ -537,8 +597,10 @@ FILE TABLE:
 HEAP: Empty
 
 -------------------------------------
+BARRIER TABLE: model.adt.BarrierTable@21ada294
+-------------------------------------
 ProgramState: 
-ID: 3
+ID: 12
 STACK: 
 1: print(v)
 2: v = v - 1
@@ -556,8 +618,10 @@ FILE TABLE:
 HEAP: Empty
 
 -------------------------------------
+BARRIER TABLE: model.adt.BarrierTable@21ada294
+-------------------------------------
 ProgramState: 
-ID: 0
+ID: 9
 STACK: 
 1: x = 1; nop; y = 3; nop; print(v * 10)
 
@@ -575,8 +639,10 @@ FILE TABLE:
 HEAP: Empty
 
 -------------------------------------
+BARRIER TABLE: model.adt.BarrierTable@21ada294
+-------------------------------------
 ProgramState: 
-ID: 3
+ID: 12
 STACK: 
 1: v = v - 1
 
@@ -594,8 +660,10 @@ FILE TABLE:
 HEAP: Empty
 
 -------------------------------------
+BARRIER TABLE: model.adt.BarrierTable@21ada294
+-------------------------------------
 ProgramState: 
-ID: 0
+ID: 9
 STACK: 
 1: x = 1
 2: nop; y = 3; nop; print(v * 10)
@@ -614,8 +682,10 @@ FILE TABLE:
 HEAP: Empty
 
 -------------------------------------
+BARRIER TABLE: model.adt.BarrierTable@21ada294
+-------------------------------------
 ProgramState: 
-ID: 3
+ID: 12
 STACK: 
 
 TABLE: v -> 1
@@ -632,8 +702,10 @@ FILE TABLE:
 HEAP: Empty
 
 -------------------------------------
+BARRIER TABLE: model.adt.BarrierTable@21ada294
+-------------------------------------
 ProgramState: 
-ID: 0
+ID: 9
 STACK: 
 1: nop; y = 3; nop; print(v * 10)
 
@@ -651,8 +723,10 @@ FILE TABLE:
 HEAP: Empty
 
 -------------------------------------
+BARRIER TABLE: model.adt.BarrierTable@21ada294
+-------------------------------------
 ProgramState: 
-ID: 0
+ID: 9
 STACK: 
 1: nop
 2: y = 3; nop; print(v * 10)
@@ -671,8 +745,10 @@ FILE TABLE:
 HEAP: Empty
 
 -------------------------------------
+BARRIER TABLE: model.adt.BarrierTable@21ada294
+-------------------------------------
 ProgramState: 
-ID: 0
+ID: 9
 STACK: 
 1: y = 3; nop; print(v * 10)
 
@@ -690,8 +766,10 @@ FILE TABLE:
 HEAP: Empty
 
 -------------------------------------
+BARRIER TABLE: model.adt.BarrierTable@21ada294
+-------------------------------------
 ProgramState: 
-ID: 0
+ID: 9
 STACK: 
 1: y = 3
 2: nop; print(v * 10)
@@ -710,8 +788,10 @@ FILE TABLE:
 HEAP: Empty
 
 -------------------------------------
+BARRIER TABLE: model.adt.BarrierTable@21ada294
+-------------------------------------
 ProgramState: 
-ID: 0
+ID: 9
 STACK: 
 1: nop; print(v * 10)
 
@@ -729,8 +809,10 @@ FILE TABLE:
 HEAP: Empty
 
 -------------------------------------
+BARRIER TABLE: model.adt.BarrierTable@21ada294
+-------------------------------------
 ProgramState: 
-ID: 0
+ID: 9
 STACK: 
 1: nop
 2: print(v * 10)
@@ -749,8 +831,10 @@ FILE TABLE:
 HEAP: Empty
 
 -------------------------------------
+BARRIER TABLE: model.adt.BarrierTable@21ada294
+-------------------------------------
 ProgramState: 
-ID: 0
+ID: 9
 STACK: 
 1: print(v * 10)
 
@@ -768,8 +852,10 @@ FILE TABLE:
 HEAP: Empty
 
 -------------------------------------
+BARRIER TABLE: model.adt.BarrierTable@21ada294
+-------------------------------------
 ProgramState: 
-ID: 0
+ID: 9
 STACK: 
 
 TABLE: v -> 3
@@ -786,4 +872,6 @@ FILE TABLE:
 -------------------------------------
 HEAP: Empty
 
+-------------------------------------
+BARRIER TABLE: model.adt.BarrierTable@21ada294
 -------------------------------------

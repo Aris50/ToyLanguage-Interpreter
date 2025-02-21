@@ -2,15 +2,12 @@ package model.statements;
 
 import exceptions.ExpressionException;
 import exceptions.StatementException;
+import model.adt.*;
 import model.statements.IStmt;
 import model.state.ProgramState;
-import model.adt.IMyStack;
-import model.adt.IMyMap;
-import model.adt.IMyList;
-import model.adt.IMyHeap;
+
 import java.io.BufferedReader;
 import model.values.IValue;
-import model.adt.MyStack;
 import model.adt.IMyMap;
 import model.types.IType;
 
@@ -30,8 +27,9 @@ public class ForkStmt implements IStmt {
         IMyList<IValue> out = state.getOut();
         IMyMap<String, BufferedReader> fileTable = state.getFileTable();
         IMyHeap heap = state.getHeap();
+        IBarrierTable barrierTable = state.getBarrierTable();
 
-        return new ProgramState(newExeStack, newSymTable, out, stmt.deepCopy(), fileTable, heap);
+        return new ProgramState(newExeStack, newSymTable, out, stmt.deepCopy(), fileTable, heap,barrierTable);
     }
 
     @Override

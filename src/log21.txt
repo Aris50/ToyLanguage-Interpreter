@@ -1,5 +1,5 @@
 ProgramState: 
-ID: 3
+ID: 18
 STACK: 
 1: Ref(Int) v1
 2: Ref(Int) v2; Ref(Int) v3; Int cnt; new(v1, 2); new(v2, 3); new(v3, 4); newBarrier(cnt, rH(v2)); fork(await(cnt); wH(v1, rH(v1) * 10); print(rH(v1))); fork(await(cnt); wH(v2, rH(v2) * 10); wH(v2, rH(v2) * 10); print(rH(v2))); await(cnt); print(rH(v3))
@@ -12,10 +12,11 @@ FILE TABLE:
 HEAP: Empty
 
 -------------------------------------
-BARRIER TABLE: model.adt.BarrierTable@1f6bff29
+BARRIER TABLE: Empty
+
 -------------------------------------
 ProgramState: 
-ID: 3
+ID: 18
 STACK: 
 1: Ref(Int) v2; Ref(Int) v3; Int cnt; new(v1, 2); new(v2, 3); new(v3, 4); newBarrier(cnt, rH(v2)); fork(await(cnt); wH(v1, rH(v1) * 10); print(rH(v1))); fork(await(cnt); wH(v2, rH(v2) * 10); wH(v2, rH(v2) * 10); print(rH(v2))); await(cnt); print(rH(v3))
 
@@ -28,10 +29,11 @@ FILE TABLE:
 HEAP: Empty
 
 -------------------------------------
-BARRIER TABLE: model.adt.BarrierTable@1f6bff29
+BARRIER TABLE: Empty
+
 -------------------------------------
 ProgramState: 
-ID: 3
+ID: 18
 STACK: 
 1: Ref(Int) v2
 2: Ref(Int) v3; Int cnt; new(v1, 2); new(v2, 3); new(v3, 4); newBarrier(cnt, rH(v2)); fork(await(cnt); wH(v1, rH(v1) * 10); print(rH(v1))); fork(await(cnt); wH(v2, rH(v2) * 10); wH(v2, rH(v2) * 10); print(rH(v2))); await(cnt); print(rH(v3))
@@ -45,10 +47,11 @@ FILE TABLE:
 HEAP: Empty
 
 -------------------------------------
-BARRIER TABLE: model.adt.BarrierTable@1f6bff29
+BARRIER TABLE: Empty
+
 -------------------------------------
 ProgramState: 
-ID: 3
+ID: 18
 STACK: 
 1: Ref(Int) v3; Int cnt; new(v1, 2); new(v2, 3); new(v3, 4); newBarrier(cnt, rH(v2)); fork(await(cnt); wH(v1, rH(v1) * 10); print(rH(v1))); fork(await(cnt); wH(v2, rH(v2) * 10); wH(v2, rH(v2) * 10); print(rH(v2))); await(cnt); print(rH(v3))
 
@@ -62,10 +65,11 @@ FILE TABLE:
 HEAP: Empty
 
 -------------------------------------
-BARRIER TABLE: model.adt.BarrierTable@1f6bff29
+BARRIER TABLE: Empty
+
 -------------------------------------
 ProgramState: 
-ID: 3
+ID: 18
 STACK: 
 1: Ref(Int) v3
 2: Int cnt; new(v1, 2); new(v2, 3); new(v3, 4); newBarrier(cnt, rH(v2)); fork(await(cnt); wH(v1, rH(v1) * 10); print(rH(v1))); fork(await(cnt); wH(v2, rH(v2) * 10); wH(v2, rH(v2) * 10); print(rH(v2))); await(cnt); print(rH(v3))
@@ -80,10 +84,11 @@ FILE TABLE:
 HEAP: Empty
 
 -------------------------------------
-BARRIER TABLE: model.adt.BarrierTable@1f6bff29
+BARRIER TABLE: Empty
+
 -------------------------------------
 ProgramState: 
-ID: 3
+ID: 18
 STACK: 
 1: Int cnt; new(v1, 2); new(v2, 3); new(v3, 4); newBarrier(cnt, rH(v2)); fork(await(cnt); wH(v1, rH(v1) * 10); print(rH(v1))); fork(await(cnt); wH(v2, rH(v2) * 10); wH(v2, rH(v2) * 10); print(rH(v2))); await(cnt); print(rH(v3))
 
@@ -98,10 +103,11 @@ FILE TABLE:
 HEAP: Empty
 
 -------------------------------------
-BARRIER TABLE: model.adt.BarrierTable@1f6bff29
+BARRIER TABLE: Empty
+
 -------------------------------------
 ProgramState: 
-ID: 3
+ID: 18
 STACK: 
 1: Int cnt
 2: new(v1, 2); new(v2, 3); new(v3, 4); newBarrier(cnt, rH(v2)); fork(await(cnt); wH(v1, rH(v1) * 10); print(rH(v1))); fork(await(cnt); wH(v2, rH(v2) * 10); wH(v2, rH(v2) * 10); print(rH(v2))); await(cnt); print(rH(v3))
@@ -117,10 +123,11 @@ FILE TABLE:
 HEAP: Empty
 
 -------------------------------------
-BARRIER TABLE: model.adt.BarrierTable@1f6bff29
+BARRIER TABLE: Empty
+
 -------------------------------------
 ProgramState: 
-ID: 3
+ID: 18
 STACK: 
 1: new(v1, 2); new(v2, 3); new(v3, 4); newBarrier(cnt, rH(v2)); fork(await(cnt); wH(v1, rH(v1) * 10); print(rH(v1))); fork(await(cnt); wH(v2, rH(v2) * 10); wH(v2, rH(v2) * 10); print(rH(v2))); await(cnt); print(rH(v3))
 
@@ -136,10 +143,11 @@ FILE TABLE:
 HEAP: Empty
 
 -------------------------------------
-BARRIER TABLE: model.adt.BarrierTable@1f6bff29
+BARRIER TABLE: Empty
+
 -------------------------------------
 ProgramState: 
-ID: 3
+ID: 18
 STACK: 
 1: new(v1, 2)
 2: new(v2, 3); new(v3, 4); newBarrier(cnt, rH(v2)); fork(await(cnt); wH(v1, rH(v1) * 10); print(rH(v1))); fork(await(cnt); wH(v2, rH(v2) * 10); wH(v2, rH(v2) * 10); print(rH(v2))); await(cnt); print(rH(v3))
@@ -156,10 +164,11 @@ FILE TABLE:
 HEAP: Empty
 
 -------------------------------------
-BARRIER TABLE: model.adt.BarrierTable@1f6bff29
+BARRIER TABLE: Empty
+
 -------------------------------------
 ProgramState: 
-ID: 3
+ID: 18
 STACK: 
 1: new(v2, 3); new(v3, 4); newBarrier(cnt, rH(v2)); fork(await(cnt); wH(v1, rH(v1) * 10); print(rH(v1))); fork(await(cnt); wH(v2, rH(v2) * 10); wH(v2, rH(v2) * 10); print(rH(v2))); await(cnt); print(rH(v3))
 
@@ -175,10 +184,11 @@ FILE TABLE:
 HEAP: 1 -> 2
 
 -------------------------------------
-BARRIER TABLE: model.adt.BarrierTable@1f6bff29
+BARRIER TABLE: Empty
+
 -------------------------------------
 ProgramState: 
-ID: 3
+ID: 18
 STACK: 
 1: new(v2, 3)
 2: new(v3, 4); newBarrier(cnt, rH(v2)); fork(await(cnt); wH(v1, rH(v1) * 10); print(rH(v1))); fork(await(cnt); wH(v2, rH(v2) * 10); wH(v2, rH(v2) * 10); print(rH(v2))); await(cnt); print(rH(v3))
@@ -195,10 +205,11 @@ FILE TABLE:
 HEAP: 1 -> 2
 
 -------------------------------------
-BARRIER TABLE: model.adt.BarrierTable@1f6bff29
+BARRIER TABLE: Empty
+
 -------------------------------------
 ProgramState: 
-ID: 3
+ID: 18
 STACK: 
 1: new(v3, 4); newBarrier(cnt, rH(v2)); fork(await(cnt); wH(v1, rH(v1) * 10); print(rH(v1))); fork(await(cnt); wH(v2, rH(v2) * 10); wH(v2, rH(v2) * 10); print(rH(v2))); await(cnt); print(rH(v3))
 
@@ -215,10 +226,11 @@ HEAP: 1 -> 2
 2 -> 3
 
 -------------------------------------
-BARRIER TABLE: model.adt.BarrierTable@1f6bff29
+BARRIER TABLE: Empty
+
 -------------------------------------
 ProgramState: 
-ID: 3
+ID: 18
 STACK: 
 1: new(v3, 4)
 2: newBarrier(cnt, rH(v2)); fork(await(cnt); wH(v1, rH(v1) * 10); print(rH(v1))); fork(await(cnt); wH(v2, rH(v2) * 10); wH(v2, rH(v2) * 10); print(rH(v2))); await(cnt); print(rH(v3))
@@ -236,10 +248,11 @@ HEAP: 1 -> 2
 2 -> 3
 
 -------------------------------------
-BARRIER TABLE: model.adt.BarrierTable@1f6bff29
+BARRIER TABLE: Empty
+
 -------------------------------------
 ProgramState: 
-ID: 3
+ID: 18
 STACK: 
 1: newBarrier(cnt, rH(v2)); fork(await(cnt); wH(v1, rH(v1) * 10); print(rH(v1))); fork(await(cnt); wH(v2, rH(v2) * 10); wH(v2, rH(v2) * 10); print(rH(v2))); await(cnt); print(rH(v3))
 
@@ -257,10 +270,11 @@ HEAP: 1 -> 2
 3 -> 4
 
 -------------------------------------
-BARRIER TABLE: model.adt.BarrierTable@1f6bff29
+BARRIER TABLE: Empty
+
 -------------------------------------
 ProgramState: 
-ID: 3
+ID: 18
 STACK: 
 1: newBarrier(cnt, rH(v2))
 2: fork(await(cnt); wH(v1, rH(v1) * 10); print(rH(v1))); fork(await(cnt); wH(v2, rH(v2) * 10); wH(v2, rH(v2) * 10); print(rH(v2))); await(cnt); print(rH(v3))
@@ -279,10 +293,11 @@ HEAP: 1 -> 2
 3 -> 4
 
 -------------------------------------
-BARRIER TABLE: model.adt.BarrierTable@1f6bff29
+BARRIER TABLE: Empty
+
 -------------------------------------
 ProgramState: 
-ID: 3
+ID: 18
 STACK: 
 1: fork(await(cnt); wH(v1, rH(v1) * 10); print(rH(v1))); fork(await(cnt); wH(v2, rH(v2) * 10); wH(v2, rH(v2) * 10); print(rH(v2))); await(cnt); print(rH(v3))
 
@@ -300,10 +315,11 @@ HEAP: 1 -> 2
 3 -> 4
 
 -------------------------------------
-BARRIER TABLE: model.adt.BarrierTable@1f6bff29
+BARRIER TABLE: 0 -> (3, [])
+
 -------------------------------------
 ProgramState: 
-ID: 3
+ID: 18
 STACK: 
 1: fork(await(cnt); wH(v1, rH(v1) * 10); print(rH(v1)))
 2: fork(await(cnt); wH(v2, rH(v2) * 10); wH(v2, rH(v2) * 10); print(rH(v2))); await(cnt); print(rH(v3))
@@ -322,10 +338,11 @@ HEAP: 1 -> 2
 3 -> 4
 
 -------------------------------------
-BARRIER TABLE: model.adt.BarrierTable@1f6bff29
+BARRIER TABLE: 0 -> (3, [])
+
 -------------------------------------
 ProgramState: 
-ID: 3
+ID: 18
 STACK: 
 1: fork(await(cnt); wH(v2, rH(v2) * 10); wH(v2, rH(v2) * 10); print(rH(v2))); await(cnt); print(rH(v3))
 
@@ -343,10 +360,11 @@ HEAP: 1 -> 2
 3 -> 4
 
 -------------------------------------
-BARRIER TABLE: model.adt.BarrierTable@1f6bff29
+BARRIER TABLE: 0 -> (3, [])
+
 -------------------------------------
 ProgramState: 
-ID: 4
+ID: 19
 STACK: 
 1: await(cnt); wH(v1, rH(v1) * 10); print(rH(v1))
 
@@ -364,10 +382,11 @@ HEAP: 1 -> 2
 3 -> 4
 
 -------------------------------------
-BARRIER TABLE: model.adt.BarrierTable@1f6bff29
+BARRIER TABLE: 0 -> (3, [])
+
 -------------------------------------
 ProgramState: 
-ID: 3
+ID: 18
 STACK: 
 1: fork(await(cnt); wH(v2, rH(v2) * 10); wH(v2, rH(v2) * 10); print(rH(v2)))
 2: await(cnt); print(rH(v3))
@@ -386,10 +405,11 @@ HEAP: 1 -> 2
 3 -> 4
 
 -------------------------------------
-BARRIER TABLE: model.adt.BarrierTable@1f6bff29
+BARRIER TABLE: 0 -> (3, [])
+
 -------------------------------------
 ProgramState: 
-ID: 4
+ID: 19
 STACK: 
 1: await(cnt)
 2: wH(v1, rH(v1) * 10); print(rH(v1))
@@ -408,10 +428,11 @@ HEAP: 1 -> 2
 3 -> 4
 
 -------------------------------------
-BARRIER TABLE: model.adt.BarrierTable@1f6bff29
+BARRIER TABLE: 0 -> (3, [])
+
 -------------------------------------
 ProgramState: 
-ID: 3
+ID: 18
 STACK: 
 1: await(cnt); print(rH(v3))
 
@@ -429,10 +450,11 @@ HEAP: 1 -> 2
 3 -> 4
 
 -------------------------------------
-BARRIER TABLE: model.adt.BarrierTable@1f6bff29
+BARRIER TABLE: 0 -> (3, [19])
+
 -------------------------------------
 ProgramState: 
-ID: 4
+ID: 19
 STACK: 
 1: await(cnt)
 2: wH(v1, rH(v1) * 10); print(rH(v1))
@@ -451,10 +473,11 @@ HEAP: 1 -> 2
 3 -> 4
 
 -------------------------------------
-BARRIER TABLE: model.adt.BarrierTable@1f6bff29
+BARRIER TABLE: 0 -> (3, [19])
+
 -------------------------------------
 ProgramState: 
-ID: 5
+ID: 20
 STACK: 
 1: await(cnt); wH(v2, rH(v2) * 10); wH(v2, rH(v2) * 10); print(rH(v2))
 
@@ -472,10 +495,11 @@ HEAP: 1 -> 2
 3 -> 4
 
 -------------------------------------
-BARRIER TABLE: model.adt.BarrierTable@1f6bff29
+BARRIER TABLE: 0 -> (3, [19])
+
 -------------------------------------
 ProgramState: 
-ID: 3
+ID: 18
 STACK: 
 1: await(cnt)
 2: print(rH(v3))
@@ -494,10 +518,11 @@ HEAP: 1 -> 2
 3 -> 4
 
 -------------------------------------
-BARRIER TABLE: model.adt.BarrierTable@1f6bff29
+BARRIER TABLE: 0 -> (3, [19])
+
 -------------------------------------
 ProgramState: 
-ID: 4
+ID: 19
 STACK: 
 1: await(cnt)
 2: wH(v1, rH(v1) * 10); print(rH(v1))
@@ -516,10 +541,11 @@ HEAP: 1 -> 2
 3 -> 4
 
 -------------------------------------
-BARRIER TABLE: model.adt.BarrierTable@1f6bff29
+BARRIER TABLE: 0 -> (3, [19])
+
 -------------------------------------
 ProgramState: 
-ID: 5
+ID: 20
 STACK: 
 1: await(cnt)
 2: wH(v2, rH(v2) * 10); wH(v2, rH(v2) * 10); print(rH(v2))
@@ -538,10 +564,11 @@ HEAP: 1 -> 2
 3 -> 4
 
 -------------------------------------
-BARRIER TABLE: model.adt.BarrierTable@1f6bff29
+BARRIER TABLE: 0 -> (3, [19])
+
 -------------------------------------
 ProgramState: 
-ID: 3
+ID: 18
 STACK: 
 1: await(cnt)
 2: print(rH(v3))
@@ -560,10 +587,11 @@ HEAP: 1 -> 2
 3 -> 4
 
 -------------------------------------
-BARRIER TABLE: model.adt.BarrierTable@1f6bff29
+BARRIER TABLE: 0 -> (3, [19, 18, 20])
+
 -------------------------------------
 ProgramState: 
-ID: 4
+ID: 19
 STACK: 
 1: await(cnt)
 2: wH(v1, rH(v1) * 10); print(rH(v1))
@@ -582,10 +610,11 @@ HEAP: 1 -> 2
 3 -> 4
 
 -------------------------------------
-BARRIER TABLE: model.adt.BarrierTable@1f6bff29
+BARRIER TABLE: 0 -> (3, [19, 18, 20])
+
 -------------------------------------
 ProgramState: 
-ID: 5
+ID: 20
 STACK: 
 1: await(cnt)
 2: wH(v2, rH(v2) * 10); wH(v2, rH(v2) * 10); print(rH(v2))
@@ -604,10 +633,11 @@ HEAP: 1 -> 2
 3 -> 4
 
 -------------------------------------
-BARRIER TABLE: model.adt.BarrierTable@1f6bff29
+BARRIER TABLE: 0 -> (3, [19, 18, 20])
+
 -------------------------------------
 ProgramState: 
-ID: 3
+ID: 18
 STACK: 
 1: print(rH(v3))
 
@@ -625,10 +655,11 @@ HEAP: 1 -> 2
 3 -> 4
 
 -------------------------------------
-BARRIER TABLE: model.adt.BarrierTable@1f6bff29
+BARRIER TABLE: 0 -> (3, [19, 18, 20])
+
 -------------------------------------
 ProgramState: 
-ID: 4
+ID: 19
 STACK: 
 1: wH(v1, rH(v1) * 10); print(rH(v1))
 
@@ -646,10 +677,11 @@ HEAP: 1 -> 2
 3 -> 4
 
 -------------------------------------
-BARRIER TABLE: model.adt.BarrierTable@1f6bff29
+BARRIER TABLE: 0 -> (3, [19, 18, 20])
+
 -------------------------------------
 ProgramState: 
-ID: 5
+ID: 20
 STACK: 
 1: wH(v2, rH(v2) * 10); wH(v2, rH(v2) * 10); print(rH(v2))
 
@@ -667,10 +699,11 @@ HEAP: 1 -> 2
 3 -> 4
 
 -------------------------------------
-BARRIER TABLE: model.adt.BarrierTable@1f6bff29
+BARRIER TABLE: 0 -> (3, [19, 18, 20])
+
 -------------------------------------
 ProgramState: 
-ID: 3
+ID: 18
 STACK: 
 
 TABLE: cnt -> 0
@@ -688,10 +721,11 @@ HEAP: 1 -> 2
 3 -> 4
 
 -------------------------------------
-BARRIER TABLE: model.adt.BarrierTable@1f6bff29
+BARRIER TABLE: 0 -> (3, [19, 18, 20])
+
 -------------------------------------
 ProgramState: 
-ID: 4
+ID: 19
 STACK: 
 1: wH(v1, rH(v1) * 10)
 2: print(rH(v1))
@@ -711,10 +745,11 @@ HEAP: 1 -> 2
 3 -> 4
 
 -------------------------------------
-BARRIER TABLE: model.adt.BarrierTable@1f6bff29
+BARRIER TABLE: 0 -> (3, [19, 18, 20])
+
 -------------------------------------
 ProgramState: 
-ID: 5
+ID: 20
 STACK: 
 1: wH(v2, rH(v2) * 10)
 2: wH(v2, rH(v2) * 10); print(rH(v2))
@@ -734,10 +769,11 @@ HEAP: 1 -> 2
 3 -> 4
 
 -------------------------------------
-BARRIER TABLE: model.adt.BarrierTable@1f6bff29
+BARRIER TABLE: 0 -> (3, [19, 18, 20])
+
 -------------------------------------
 ProgramState: 
-ID: 4
+ID: 19
 STACK: 
 1: print(rH(v1))
 
@@ -756,10 +792,11 @@ HEAP: 1 -> 20
 3 -> 4
 
 -------------------------------------
-BARRIER TABLE: model.adt.BarrierTable@1f6bff29
+BARRIER TABLE: 0 -> (3, [19, 18, 20])
+
 -------------------------------------
 ProgramState: 
-ID: 5
+ID: 20
 STACK: 
 1: wH(v2, rH(v2) * 10); print(rH(v2))
 
@@ -778,10 +815,11 @@ HEAP: 1 -> 20
 3 -> 4
 
 -------------------------------------
-BARRIER TABLE: model.adt.BarrierTable@1f6bff29
+BARRIER TABLE: 0 -> (3, [19, 18, 20])
+
 -------------------------------------
 ProgramState: 
-ID: 4
+ID: 19
 STACK: 
 
 TABLE: cnt -> 0
@@ -800,10 +838,11 @@ HEAP: 1 -> 20
 3 -> 4
 
 -------------------------------------
-BARRIER TABLE: model.adt.BarrierTable@1f6bff29
+BARRIER TABLE: 0 -> (3, [19, 18, 20])
+
 -------------------------------------
 ProgramState: 
-ID: 5
+ID: 20
 STACK: 
 1: wH(v2, rH(v2) * 10)
 2: print(rH(v2))
@@ -824,10 +863,11 @@ HEAP: 1 -> 20
 3 -> 4
 
 -------------------------------------
-BARRIER TABLE: model.adt.BarrierTable@1f6bff29
+BARRIER TABLE: 0 -> (3, [19, 18, 20])
+
 -------------------------------------
 ProgramState: 
-ID: 5
+ID: 20
 STACK: 
 1: print(rH(v2))
 
@@ -847,10 +887,11 @@ HEAP: 1 -> 20
 3 -> 4
 
 -------------------------------------
-BARRIER TABLE: model.adt.BarrierTable@1f6bff29
+BARRIER TABLE: 0 -> (3, [19, 18, 20])
+
 -------------------------------------
 ProgramState: 
-ID: 5
+ID: 20
 STACK: 
 
 TABLE: cnt -> 0
@@ -870,5 +911,6 @@ HEAP: 1 -> 20
 3 -> 4
 
 -------------------------------------
-BARRIER TABLE: model.adt.BarrierTable@1f6bff29
+BARRIER TABLE: 0 -> (3, [19, 18, 20])
+
 -------------------------------------

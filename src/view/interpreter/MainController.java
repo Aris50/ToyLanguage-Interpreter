@@ -75,7 +75,7 @@ public class MainController {
         exampleListView.getItems().addAll(
                 "Example 1", "Example 2", "Example 3", "Example 4", "Example 5",
                 "Example 6", "Example 7", "Example 8", "Example 9", "Example 10",
-                "Example 11", "Example 12", "Example 13", "Example 14", "Example 15", "Example 16", "Example 17", "Example 18", "Example 19", "Example 20"
+                "Example 11", "Example 12", "Example 13", "Example 14", "Example 15", "Example 16", "Example 17", "Example 18", "Example 19", "Example 20", "Example 21"
         );
 
         exampleListView.getSelectionModel().selectedItemProperty().addListener((observable, oldValue, newValue) -> {
@@ -164,6 +164,9 @@ public class MainController {
                 break;
             case "Example 20":
                 example = new Example20();
+                break;
+            case "Example 21":
+                example = new Example21();
                 break;
             default:
                 showAlert("Invalid example", "The selected example is not valid.");
@@ -258,19 +261,23 @@ public class MainController {
                 break;
             case "Example 17":
                 example = new Example17();
-                logFilePath="/Users/arisoniga/Desktop/Work/UBB_FMI_INFO/IE2/MAP/ASSIGNMENTS/A6/src/log17.txt";
+                logFilePath = "/Users/arisoniga/Desktop/Work/UBB_FMI_INFO/IE2/MAP/ASSIGNMENTS/A6/src/log17.txt";
                 break;
             case "Example 18":
                 example = new Example18();
-                logFilePath="/Users/arisoniga/Desktop/Work/UBB_FMI_INFO/IE2/MAP/ASSIGNMENTS/A6/src/log18.txt";
+                logFilePath = "/Users/arisoniga/Desktop/Work/UBB_FMI_INFO/IE2/MAP/ASSIGNMENTS/A6/src/log18.txt";
                 break;
             case "Example 19":
                 example = new Example19();
-                logFilePath="/Users/arisoniga/Desktop/Work/UBB_FMI_INFO/IE2/MAP/ASSIGNMENTS/A6/src/log19.txt";
+                logFilePath = "/Users/arisoniga/Desktop/Work/UBB_FMI_INFO/IE2/MAP/ASSIGNMENTS/A6/src/log19.txt";
                 break;
             case "Example 20":
-                example=new Example20();
-                logFilePath="/Users/arisoniga/Desktop/Work/UBB_FMI_INFO/IE2/MAP/ASSIGNMENTS/A6/src/log20.txt";
+                example = new Example20();
+                logFilePath = "/Users/arisoniga/Desktop/Work/UBB_FMI_INFO/IE2/MAP/ASSIGNMENTS/A6/src/log20.txt";
+                break;
+            case "Example 21":
+                example = new Example21();
+                logFilePath = "/Users/arisoniga/Desktop/Work/UBB_FMI_INFO/IE2/MAP/ASSIGNMENTS/A6/src/log21.txt";
                 break;
             default:
                 showAlert("Invalid example", "The selected example is not valid.");
@@ -280,17 +287,17 @@ public class MainController {
         try {
             IStmt stmt = example.getExample();
             stmt.typecheck(new MyMap<>());
-            ProgramState prg = new ProgramState(new MyStack<>(), new MyMap<>(), new MyList<>(), stmt, new MyMap<>(), new MyHeap());
+            ProgramState prg = new ProgramState(new MyStack<>(), new MyMap<>(), new MyList<>(), stmt, new MyMap<>(), new MyHeap(), new BarrierTable());
             try {
                 IRepository repo = new Repository(logFilePath, prg);
                 Controller ctr = new Controller(repo);
                 RunExample runExample = new RunExample(selectedExample, stmt.toString(), ctr);
-                currentRunExample=runExample;
+                currentRunExample = runExample;
                 runExample.execute();
+                updateUi(); // Update the UI with the final result
                 showFinalOutput();
-                currentRunExample=null;
-            }
-            catch (Exception e) {
+                currentRunExample = null;
+            } catch (Exception e) {
                 showAlert("Repository error", "Error creating repository: " + e.getMessage());
                 return;
             }
@@ -431,6 +438,10 @@ public class MainController {
                     example = new Example20();
                     logFilePath="/Users/arisoniga/Desktop/Work/UBB_FMI_INFO/IE2/MAP/ASSIGNMENTS/A6/src/log20.txt";
                     break;
+                case "Example 21":
+                    example = new Example21();
+                    logFilePath="/Users/arisoniga/Desktop/Work/UBB_FMI_INFO/IE2/MAP/ASSIGNMENTS/A6/src/log21.txt";
+                    break;
                 default:
                     showAlert("Invalid example", "The selected example is not valid.");
                     return;
@@ -440,7 +451,7 @@ public class MainController {
                 clearAll();
                 IStmt stmt = example.getExample();
                 stmt.typecheck(new MyMap<>());
-                ProgramState prg = new ProgramState(new MyStack<>(), new MyMap<>(), new MyList<>(), stmt, new MyMap<>(), new MyHeap());
+                ProgramState prg = new ProgramState(new MyStack<>(), new MyMap<>(), new MyList<>(), stmt, new MyMap<>(), new MyHeap(), new BarrierTable());
                 try {
                     IRepository repo = new Repository(logFilePath, prg);
                     Controller ctr = new Controller(repo);
